@@ -1,0 +1,16 @@
+Write code that receives 3 inputs:
+
+an integer to process
+the starting (rightmost) bit position of the desired sequence (Note: bits are numbered starting at 0 for the least significant bit)
+the ending (leftmost) bit position of the desired sequence
+Then compute the extracted bits as a stand-alone integer. (Review section 3.11).
+
+The code template provided does the input for you.
+
+Here is a sample test run:
+
+Enter the integer that holds the bits: 60000
+Enter the rightmost bit position: 3
+Enter the leftmost bit position: 11
+Extracting bits 3 through 11 from 60000 = 00000000000000001110101001100000:
+332 = 00000000000000000000000101001100
