@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// Class to help build the arrow
 class Arrow {
     public:
         void createBase(int baseDigit) {
             int count = 0;
+
             while(count < 5)
             {
                 cout << baseDigit;
@@ -14,6 +16,7 @@ class Arrow {
 
         void createHead(int headDigit, int iteration) {
             int count = 0;
+
             while (count < iteration)
             {
                 cout << headDigit;
@@ -25,16 +28,19 @@ class Arrow {
 };
 
 int main() {
-    Arrow arrow;
+    // Init variables
+   Arrow arrow;
    int baseDigit;
    int headDigit;
 
-   /* Type your code here. */
+   // Take input
    cin >> baseDigit;
    cin >> headDigit;
 
+   // Output arrow
    cout << "     ";
    arrow.createHead(headDigit, 1);
+
    cout << "     ";
    arrow.createHead(headDigit, 2);
    arrow.createBase(baseDigit);
@@ -43,8 +49,10 @@ int main() {
    arrow.createHead(headDigit, 4);
    arrow.createBase(baseDigit);
    arrow.createHead(headDigit, 3);
+
    cout << "     ";
    arrow.createHead(headDigit, 2);
+   
    cout << "     ";
    arrow.createHead(headDigit, 1);
 
