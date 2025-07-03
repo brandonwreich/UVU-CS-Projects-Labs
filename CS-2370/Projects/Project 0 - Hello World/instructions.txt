@@ -1,0 +1,13 @@
+Demonstrate that you can build and execute a simple C++ program.
+
+Scoring:
+
+5 points if you use an online compiler such as replit.com, cpp.sh, or onlinegdb.com
+
+10 points if you install a compiler, such as Visual Studio, clang, or g++. (Note that VSCode is NOT a compiler, it is an editor.)
+
+Turn in options:
+
+1. Submit a screen shot of your compile and execution.
+
+2. Demonstrate it in class the next day of class.
