@@ -1,0 +1,110 @@
+Program Specifications Write a program that stores the roster and rating information for a soccer team. The program also allows coaches to update information during tryouts to ensure a balanced team.
+
+Note: This program is designed for incremental development. Complete each step and submit for grading before starting the next step. Only a portion of tests pass after each step but confirm progress.
+
+Step 1 (3 pts): Read and verify user input.
+Prompt the user to input five pairs of numbers: A player's jersey number (0 - 99) and the player's rating (1 - 9). Store the jersey numbers in one integer vector and the ratings in another integer vector. Output the two vectors (i.e., output the roster). Submit for grading to confirm 2 tests pass.
+
+Ex: If the input is:
+
+Enter player 1's jersey number:
+84
+Enter player 1's rating:
+7
+
+Enter player 2's jersey number:
+23
+Enter player 2's rating:
+4
+
+Enter player 3's jersey number:
+4
+Enter player 3's rating:
+5
+
+Enter player 4's jersey number:
+30
+Enter player 4's rating:
+2
+
+Enter player 5's jersey number:
+66
+Enter player 5's rating:
+9
+
+the output is:
+
+ROSTER
+Player 1 -- Jersey number: 84, Rating: 7
+Player 2 -- Jersey number: 23, Rating: 4
+Player 3 -- Jersey number: 4, Rating: 5
+Player 4 -- Jersey number: 30, Rating: 2
+Player 5 -- Jersey number: 66, Rating: 9
+
+Step 2 (2 pts): Implement menu.
+Implement a menu of options for a user to modify the roster. Each option is represented by a single character. Prompt the user for input at the end of the menu. The program outputs the menu after the input and output of the initial roster. The program outputs the menu again after a menu option is executed. The program ends when the user chooses the option to quit. For this step, choosing other options than q does nothing. Submit for grading to confirm 3 tests pass.
+
+Hint: Use a loop.
+
+Example of the menu and prompt for an option:
+
+MENU
+a - Add player
+d - Remove player
+u - Update player rating
+r - Output players above a rating
+o - Output roster
+q - Quit
+
+Choose an option:
+
+Step 3 (1 pt): Implement the "Output roster" menu option. 
+Submit for grading to confirm 4 tests pass.
+
+Ex: With the same example input as in Step 1 and If the user chooses option o, the output is:
+
+ROSTER
+Player 1 -- Jersey number: 84, Rating: 7
+Player 2 -- Jersey number: 23, Rating: 4
+Player 3 -- Jersey number: 4, Rating: 5
+Player 4 -- Jersey number: 30, Rating: 2
+Player 5 -- Jersey number: 66, Rating: 9
+
+Step 4 (1 pt): Implement the "Add player" menu option. 
+Prompt the user for a new player's jersey number and rating. Append the values to the two vectors. Submit for grading to confirm 5 tests pass.
+
+Ex: If a new player in jersey number 49 and rating 8 is to be added, the user chooses option a and the prompts are:
+
+Enter a new player's jersey number:
+49
+Enter the player's rating:
+8
+
+Step 5 (2 pt): Implement the "Remove player" menu option. 
+Prompt the user for a player's jersey number. Remove the player from the roster (delete the jersey number and rating). Submit for grading to confirm 7 tests pass.
+
+Ex: If a player in jersey number 4 is to be deleted, the user chooses option d and the prompt is:
+
+Enter a jersey number:
+4
+
+Step 6 (1 pt): Implement the "Update player rating" menu option.
+Prompt the user for a player's jersey number. Prompt again for a new rating for the player. Replace the player's rating with the new rating. Submit for grading to confirm 8 tests pass.
+
+Ex: If the rating of the player in jersey number 23 is to be changed to 6, the user chooses u and the prompts are:
+
+Enter a jersey number:
+23
+Enter a new rating for player:
+6
+Step 7 (2 pts): Implement the "Output players above a rating" menu option. 
+Prompt the user for a rating. Print the jersey number and rating for all players with ratings above the entered value. Submit for grading to confirm all tests pass.
+
+Ex: With the same example input as in Step 1 and If the user chooses option r and enters 5, the prompt and output are:
+
+Enter a rating:
+5
+
+ABOVE 5
+Player 1 -- Jersey number: 84, Rating: 7
+Player 5 -- Jersey number: 66, Rating: 9
