@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background-image: url("imgs/background.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+p {
+    margin-top: 7.5pt;
+    margin-bottom: 7.5pt;
+}
+
+h2 {
+    margin-top: 22.5pt;
+    margin-bottom: 3pt;
+}
+
+.container {
+    padding: 30px;
+    position:relative;
+    width:900px;
+    margin:0 auto;
+    background-color: seashell;
+
+    height:auto !important;
+    height:100%;
+
+    min-height:100%;
+}
+
+#firstPicture {
+    float: right;
+    width: 300px;
+    height: 400px; 
+    box-shadow: 10px 10px 10px 10px #888888;
+    margin: 30px;
+}
+
+#pageTitle {
+    margin-top: 22.5pt;
+    margin-bottom: 3pt;
+    font-size: 30pt;
+    font-family: fantasy;
+}
+
+span.books {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#haiku {
+    font-family: cursive;
+}
+
+#maukaProject {
+    text-decoration: underline;
+    color: blue;
+}
+
+#schedule-header {
+    justify-content: center;
+}
+
+#schedule-table {
+    border: 5px solid black;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 3px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightgray;
+}
+
+td.work {
+    background-color: lightblue;
+}
+
+td.english {
+    background-color: lightcoral;
+}
+
+td.philo {
+    background-color: lightseagreen;
+}
+
+td.cs1 {
+    background-color: goldenrod;
+}
+
+td.cs2 {
+    background-color: blueviolet;
+}
+
+td.gym {
+    background-color: rgb(42, 165, 85);
+}
+
+td.lunch {
+    background-color: yellow;
+}

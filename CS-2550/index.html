@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- EXAMPLE CODE HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Brandon Reich
+Submitted: 1/30/23
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs):
+
+This was a fun project to implement. I think that it was a good project to start out with to get a
+good handle on HTML and CSS. It was easy enough that it didn't take a lot of time to work on, but
+also it was hard enough that some effort had to be put into it.
+
+One thing I had trouble with was formatting the table. It wasn't too hard in end to achieve the
+format that I wanted, but it definetly took me some time and research. Other than that I felt
+like the rest came pretty easily and was easy to implement. 
+-->
+<html lang="en">
+
+<head>
+    <title>About Brandon Reich</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <link rel="stylesheet" href="main.css">
+        </header>
+        <div class="container">
+            <h1 id="pageTitle">Brandon Reich</h1>
+            <hr>
+            <img src="imgs/ThumbsUp.jpeg" id="firstPicture" alt="Brandon smiling giving double thumbs up">
+
+            <section>
+                <!--Personal Info Section-->
+                <h2 id="info-header" class="about-headers">Personal Info</h2>
+                <ul id="info-list">
+                    <li>Major: Computer Science</li>
+                    <li>Highschool: Alta, Class of 2018</li>
+                    <li>Year at UVU: Softmore</li>
+                    <li>Favorite Ice Cream Flavor: Cookies and Creme</li>
+                </ul>
+
+                <!--Favorite Books Section-->
+                <h2 id="books-header" class="about-headers">My Five Favorite Books</h2>
+                <ul id="books-list">
+                    <li>
+                        <span class="books">Enders Game</span> by
+                        <a href="https://en.wikipedia.org/wiki/Orson_Scott_Card">Orson Scott Card</a>
+                    </li>
+                    <li>
+                        <span class="books">Green Lights</span> by
+                        <a href="https://en.wikipedia.org/wiki/Matthew_McConaughey">Mathew McConaughey</a>
+                    </li>
+                    <li>
+                        <span class="books">Mans Search For Meaning</span> by
+                        <a href="https://en.wikipedia.org/wiki/Viktor_Frankl">Victor E. Frankl</a>
+                    </li>
+                    <li>
+                        <span class="books">Happier</span> by
+                        <a href="https://talbenshahar.com/">Tal Ben-Shahar</a>
+                    </li>
+                    <li>
+                        <span class="books">Into the Wild</span> by
+                        <a href="https://jonkrakauer.com/">Jon Krakauer</a>
+                    </li>
+                </ul>
+
+                <!--Haiku-->
+                <h2 id="haiku-header" class="about-headers">Haiku</h2>
+                <p id="haiku-description">Memory of Home</p>
+                <p id="haiku">
+                    To run away to<br>
+                    Her sandy beaches call me<br>
+                    I wish I was there
+                </p>
+
+                <!--Personal Essay-->
+                <h2 id="essay-header" class="about-headers">Personal Intrests</h2>
+                <p id="essay">
+                    I am an avid camper. I will go anywhere, anytime to camp, even in the winter. Everything I do is
+                    either camping
+                    related, or so that I can go camping in the future. Last year I created an LLC called
+                    <a id=maukaProject href="https://www.instagram.com/themaukaproject/">The Mauka Project</a> in order
+                    to pay for these expeditions.
+                    The Mauka Project is an outdoor expedition company that will plan your outdoor trips as well as
+                    provide
+                    equipment, guides, and all the fun nature can provide. It definitely helps me pay those camping
+                    bills and helps
+                    me to go on more trips at other peoples expense. There are so many things you can do on these
+                    expeditions. You
+                    can go rock climbing, white water rafting, canyoneering, or even have a nice relaxing weekend in the
+                    woods. I
+                    highly recommend that anyone who is able to should spend as much time as possible in nature.
+                    <br>
+                    <br>
+                    Another interest I have is music. Music has always been a part of my life. Growing up each sibling
+                    and I were
+                    required to take piano lessons. Since then I have learned to play several instruments and have even
+                    composed a
+                    a few pieces of music myself. Unfortunately I don't have as much time to play or learn new
+                    instruments, I enjoy
+                    listening to music almost 24/7. I will have to say that my favorite genre of music is definitely
+                    classical which
+                    is controversial to some other peoples views.
+                    <br>
+                    <br>
+                    What's a computer science major without his geek side. Another interest I have is Star Wars.
+                    Anything and everything
+                    Star Wars is absolutely amazing and inspired. I constantly watch the movies and tv shows or play the
+                    games. Star Wars
+                    is one thing that I will never get sick of.
+                </p>
+
+                <!--Class Schedule-->
+                <h2 id="schedule-header" class="about-headers">Class Schedule</h2>
+                <table id="schedule-table">
+                    <tr>
+                        <td></td>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>8:00</td>
+                        <td class=work colspan=5 rowspan=5>Work</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                    </tr>
+                    <tr>
+                        <td>9:00</td>
+                    </tr>
+                    <tr>
+                        <td>9:30</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td></td>
+                        <td class=english rowspan=3>ENGL 1010</td>
+                        <td></td>
+                        <td class=english rowspan=3>ENGL 1010</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td class=lunch rowspan=2 colspan=5>Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>12:30</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td class=work rowspan=6>Work</td>
+                        <td class=philo rowspan=3>PHIL 2050</td>
+                        <td class=work rowspan=6>Work</td>
+                        <td class=philo rowspan=3>PHIL 2050</td>
+                        <td class=work rowspan=6>Work</td>
+                    </tr>
+                    <tr>
+                        <td>13:30</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td class=cs1 rowspan=3>CS 2550</td>
+                        <td class=cs1 rowspan=3>CS 2550</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>15:30</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td class=gym rowspan=3 colspan=5>Workout</td>
+                    </tr>
+                    <tr>
+                        <td>16:30</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td></td>
+                        <td class=cs2 rowspan=3>CS 2370</td>
+                        <td></td>
+                        <td class=cs2 rowspan=3>CS 2370</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>18:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td class=work rowspan=3 colspan=5>Work</td>
+                    </tr>
+                    <tr>
+                        <td>19:30</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
