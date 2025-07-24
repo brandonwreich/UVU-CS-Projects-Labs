@@ -54,12 +54,12 @@ public:
             bits <<= -n;
         }
     }
-    void rotate(int n) {       // If n > 0, rotates right n places; if n < 0, rotates left
+    void rotate(int n) {
         if(n > 0) {
-            
+            bits = (bits >> n) | (bits << (NBITS - n));
         }
         else if(n < 0) {
-
+            bits = (bits << -n) | (bits >> (NBITS + n));
         }
     }
     int ones() const {
