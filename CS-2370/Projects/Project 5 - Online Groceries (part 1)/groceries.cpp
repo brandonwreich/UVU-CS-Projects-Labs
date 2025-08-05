@@ -121,12 +121,10 @@ void one_customer_order() {
     cout << fixed << setprecision(2) << "Total cost: $" << totalCost << endl;
 }
 
-
-
 int main () {
     read_customers("customers.txt");
     read_items("items.txt");
-    one_customer_order();
+     one_customer_order();
 
     return 0;
 }
