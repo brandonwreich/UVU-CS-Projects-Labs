@@ -1,0 +1,20 @@
+Lab: Vector Template
+CS 2370
+
+Background
+In Project 4 you built your own vector of ints. In this lab you will make your vector generic by using a
+class template.
+
+Requirements
+Make a copy of your Vector class from Project 4 and change all references to the type of element
+contained in your array to be the template parameter T.
+Once again, you are provided a test driver, testVector.cpp, and the test framework in test.h, to
+rigorously test your project before you turn it in. The expected output is:
+    Test Report:
+    Number of Passes = 84
+    Number of Failures = 0
+You can remove the trace print from the grow function for this lab. Once again, your grade will be the
+percentage of tests that you pass.
+
+Implementation Notes
+Remember that templates must all be defined inline within a single .h file.
