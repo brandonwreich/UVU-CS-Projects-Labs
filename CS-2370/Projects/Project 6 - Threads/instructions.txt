@@ -1,0 +1,39 @@
+Project 6: Threads
+CS 2370
+
+Background
+The purpose of this assignment is to learn about multithreading and writing concurrent
+programs.
+
+Requirements
+Write a program that finds all the prime numbers from 2 to 1 million (inclusive).
+Create 4 threads to do the work.
+Do the following:
+    1. As you find a prime number, write it to a file called “primes.dat”.
+    2. After all the work is done, report the total number of primes found.
+    3. Each thread should also keep track of the number of primes it finds. After printing the
+    total number of primes found, print the number of primes each thread found.
+
+Implementation Notes
+1. How do you determine if a number is prime? While there are more efficient ways, just
+take the simple approach:
+    a. For 2, and then all the odd numbers greater than 2, if that number divides the
+    candidate number, then the candidate number isn’t prime.
+    b. Stop when you get to the candidate number/2.
+2. You will need to test every number from 2 to 1,000,000. If you had a single thread, you
+would just have a simple loop. But now you must coordinate which thread works on
+which number. So you need a shared counter. Of course, to avoid race conditions, you
+must protect its usage with a mutex.
+3. You also have a shared file. So you have to protect writes to it with a mutex.
+4. You also have a shared counter of the number of primes found. It needs to be protected
+as well. However, since locking is actually expensive, and the counter updates at the
+same time you write a prime to the file, it’s probably best to put it in the same critical
+section as the file write (sharing the same mutex.)
+5. Shared resources must be accessible to all threads and to the main program. Yes, make
+them global variables. Make the output file stream a global variable also.
+6. How does a thread know when it is done? Think about it.
+7. You want to always make sure to lock where needed, but only where needed. Think
+carefully about exactly what needs to be locked.
+8. Note that the numbers in primes.dat are not necessarily in order. That’s fine.
+
+This is a short program. My program is 73 lines long.
