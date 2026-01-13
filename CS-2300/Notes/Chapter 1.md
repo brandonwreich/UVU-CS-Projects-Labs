@@ -2,6 +2,23 @@
 
 ## Table of Contents
 - [1.1 Propositions and logical operations](#11-propositions-and-logical-operations)
+  - [The conjunction operation](#the-conjunction-operation)
+  - [Different ways to express a conjunction in English](#different-ways-to-express-a-conjunction-in-english)
+  - [The disjunction operation](#the-disjunction-operation)
+  - [Ambiguity of "or" in English](#ambiguity-of-or-in-english)
+- [1.2 Evaluating compound propositions](#12-evaluating-compound-propositions)
+  - [Filling in the rows of a truth table](#filling-in-the-rows-of-a-truth-table)
+- [1.3 Conditional statements](#13-conditional-statements)
+  - [The converse, contrapositive, and inverse](#the-converse-contrapositive-and-inverse)
+  - [The biconditional operation](#the-biconditional-operation)
+  - [Compound propositions with conditional and biconditional operations](#compound-propositions-with-conditional-and-biconditional-operations)
+- [1.4 Logical Equivalence](#14-logical-equivalence)
+  - [Showing logical equivalence using truth tables](#showing-logical-equivalence-using-truth-tables)
+  - [De Morgan's laws](#de-morgans-laws)
+- [1.5 Laws of propositional logic](#15-laws-of-propositional-logic)
+  - [Using the laws of propositional logic to show logical equivalence](#using-the-laws-of-propositional-logic-to-show-logical-equivalence)
+- [Video Lecture/Presentation Notes](#video-lecturepresentation-notes)
+  - [Short-circuiting](#short-circuiting)
 
 ## 1.1 Propositions and logical operations
 **Learning Objectives**:
@@ -211,7 +228,7 @@ $$
 \text{If p, then q.} & \text{If you mow Mr. Smith's lawn, then he will pay you.} \\
 \text{If p, q.} & \text{If you mow Mr. Smith's lawn, he will pay you.} \\
 \text{q if p.} & \text{Mr. Smith will pay you if you mow his lawn.} \\
-\text{p implies q.} & \text{Mowing Mr. Smith's lawn imples that he will pay you.} \\
+\text{p implies q.} & \text{Mowing Mr. Smith's lawn implies that he will pay you.} \\
 \text{q whenever p.} & \text{Mr. Smith will pay you whenever you mow his lawn.} \\
 \text{p only if q.} & \text{You will mow Mr. Smith's lawn only if he pays you.} \\
 \text{p is sufficient for q.} & \text{Mowing  Mr. Smith's lawn is sufficient for him to pay you.} \\
@@ -336,3 +353,9 @@ $$
 \hline
 \end{array}
 $$
+
+## Video Lecture/Presentation Notes
+### Short-circuiting
+- Sometimes you don't need to calculate all parts of a compound proposition
+  - Example: $p \land (q \lor r \lor \neg t)$
+    - If *p* is false, then the entire proposition is false, regardless of the truth values of *q*, *r*, and *t*.
