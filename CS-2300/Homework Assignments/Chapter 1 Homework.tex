@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[margin=1in]{geometry}
+
+\title{Chapter 1 Homework}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{1.1.3}
+\begin{itemize}
+    \item e - $F$
+    \item f - $T$
+\end{itemize}
+
+\subsection*{1.1.4}
+\begin{itemize}
+    \item a - $T$, $T$
+    \item e - $T$, $F$
+\end{itemize}
+
+\subsection*{1.2.2}
+\begin{itemize}
+    \item a - $p \land q$
+    \item c - $\neg (p \lor q)$
+\end{itemize}
+
+\subsection*{1.2.3}
+\begin{itemize}
+    \item e - $F$
+\end{itemize}
+
+\subsection*{1.2.4}
+\begin{itemize}
+    \item c
+\end{itemize}
+
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+p & q & r & r \lor (p \land \neg q) \\
+\hline
+T & T & T & T \\
+T & T & F & F \\
+T & F & T & T \\
+T & F & F & T \\
+F & T & T & T \\
+F & T & F & F \\
+F & F & T & T \\
+F & F & F & F \\
+\hline
+\end{array}
+$$
+
+\subsection*{1.2.7}
+\begin{itemize}
+    \item b - $(B \land D) \lor (D \land M) \lor (M \land B)$
+\end{itemize}
+
+\subsection*{1.3.2}
+\begin{itemize}
+    \item b - If he trained for the race, then he finished the race.
+    \begin{enumerate}
+        \item \textbf{INVERSE} - If he did not train for the race, then he did not finish the race
+        \item \textbf{CONVERSE} - If he finished the race, then he trained for the race
+        \item \textbf{CONTRAPOSITIVE} - If he did not finish the race, then he did not train for the race.
+    \end{enumerate}
+\end{itemize}
+
+\subsection*{1.3.4}
+\begin{itemize}
+    \item c
+\end{itemize}
+
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+p & q & p \lor q & q \rightarrow \neg p & (p \lor q) \leftrightarrow (q \rightarrow \neg p) \\
+\hline
+T & T & T & F & F \\
+T & F & T & T & T \\
+F & T & T & T & T \\
+F & F & F & T & F \\
+\hline
+\end{array}
+$$
+
+\subsection*{1.3.5}
+\begin{itemize}
+    \item a - $\neg j \rightarrow c$
+    \item c - $\neg j \rightarrow \neg c$
+\end{itemize}
+
+\subsection*{1.3.7}
+\begin{itemize}
+    \item b - $(y \lor s) \rightarrow p$
+    \item d - $p \leftrightarrow (y \land s)$
+\end{itemize}
+
+\subsection*{1.3.8}
+\begin{itemize}
+    \item d - If traffic was heavy, then the roads were wet or there was an accident
+\end{itemize}
+
+\subsection*{1.3.10}
+\begin{itemize}
+    \item b - unknown
+\end{itemize}
+
+\subsection*{1.4.2}
+\begin{itemize}
+    \item b
+\end{itemize}
+
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+p & q & \neg(p \leftrightarrow q) & \neg p \leftrightarrow q \\
+\hline
+T & T & F & F \\
+T & F & T & T \\
+F & T & T & T \\
+F & F & F & F \\
+\hline
+\end{array}
+$$
+
+\subsection*{1.4.5}
+\begin{itemize}
+    \item a
+\end{itemize}
+
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+j & l & r & \neg j \rightarrow (l \lor \neg r) & (r \land \neg j) \rightarrow l \\
+\hline
+T & T & T & T & T \\
+T & T & F & T & T \\
+T & F & T & T & T \\
+T & F & F & T & T \\
+F & T & T & T & T \\
+F & T & F & T & T \\
+F & F & T & F & F \\
+F & F & F & T & T \\
+\hline
+\end{array}
+$$
+
+\subsection*{1.5.2}
+\begin{itemize}
+    \item c - $(p \rightarrow q) \land (p \rightarrow r) \equiv p \rightarrow (q \land r)$
+\end{itemize}
+
+$$
+\begin{array}{|c|c|}
+\hline
+\textbf{Expression} & \textbf{Justification} \\
+\hline
+(p \rightarrow q) \land (p \rightarrow r) & \\
+(\neg p \lor q) \land (\neg p \lor r) & \text{Conditional identity} \\
+\neg p \lor (q \land r) & \text{Distributive law} \\
+p \rightarrow (q \land r) & \text{Conditional identity} \\
+\hline
+\end{array}
+$$
+
+\end{document}

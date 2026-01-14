@@ -45,18 +45,12 @@
   - Even if the truth value is unknown it can still be a proposition
   - The following are all propositions:
 
-$$
-\begin{array}{|c|c|}
-\hline
-\text{Proposition} & \text{Notes} \\
-\hline
-\text{Two plus two is four} & \text{Truth value is true.} \\
-\text{Two plus two is five} & \text{Truth value is false.} \\
-\text{Monday will be cloudy} & \text{Truth value is unknown.} \\
-\text{The movie was funny} & \text{Truth value is a matter of opinion.} \\
-\hline
-\end{array}
-$$
+| Proposition | Notes |
+|---|---|
+| Two plus two is four | Truth value is true. |
+| Two plus two is five | Truth value is false. |
+| Monday will be cloudy | Truth value is unknown. |
+| The movie was funny | Truth value is a matter of opinion. |
 
 ### The conjunction operation
 - **Propositional variables** such as *p*, *q*, and *r* are used to denote arbitrary propositions, as in:
@@ -73,18 +67,12 @@ $$
 
 Here is the truth table for the conjunction operation:
 
-$$
-\begin{array}{|c c|c|}
-\hline
-p & q & p \land q \\
-\hline
-T & T & T \\
-T & F & F \\
-F & T & F \\
-F & F & F \\
-\hline
-\end{array}
-$$
+| $p$ | $q$ | $p \land q$ |
+|---|---|---|
+| $T$ | $T$ | $T$ |
+| $T$ | $F$ | $F$ |
+| $F$ | $T$ | $F$ |
+| $F$ | $F$ | $F$ |
 
 ### Different ways to express a conjunction in English
 - Define the propositional variables *p* and *h* as:
@@ -92,18 +80,12 @@ $$
   - *h*: the sauce tastes delicious
 - There are many ways to express the proposition *p* $\land$ *h* in English:
 
-$$
-\begin{array}{|c|c|}
-\hline
-\text{Expression} & \text{English} \\
-\hline
-p \land h & \text{The sauce looks disgusting and tastes delicious} \\
-\text{p, but h} & \text{The sauce looks disgusting, but tastes delicious} \\
-\text{Despite the fact that p, h} & \text{Despite the fact that the sauce looks disgusting, it tastes delicious} \\
-\text{Although p, h} & \text{Although the sauce looks disgusting, it tastes delicious} \\
-\hline
-\end{array}
-$$
+| Expression | English |
+|---|---|
+| $p \land h$ | The sauce looks disgusting and tastes delicious |
+| p, but h | The sauce looks disgusting, but tastes delicious |
+| Despite the fact that p, h | Despite the fact that the sauce looks disgusting, it tastes delicious |
+| Although p, h | Although the sauce looks disgusting, it tastes delicious |
 
 ### The disjunction operation
 - The disjunction operation is denoted by $\lor$.
@@ -113,18 +95,12 @@ $$
 
 Here is the truth table for the disjunction operation:
 
-$$
-\begin{array}{|c c|c|}
-\hline
-p & q & p \lor q \\
-\hline
-T & T & T \\
-T & F & T \\
-F & T & T \\
-F & F & F \\
-\hline
-\end{array}
-$$
+| $p$ | $q$ | $p \lor q$ |
+|---|---|---|
+| $T$ | $T$ | $T$ |
+| $T$ | $F$ | $T$ |
+| $F$ | $T$ | $T$ |
+| $F$ | $F$ | $F$ |
 
 ### Ambiguity of "or" in English
 - The meaning of the word "or" in English depends on the context.
@@ -138,16 +114,10 @@ $$
 
 Here is the truth table for the negation operation:
 
-$$
-\begin{array}{|c|c|}
-\hline
-p & \neg p \\
-\hline
-T & F \\
-F & T \\
-\hline
-\end{array}
-$$
+| $p$ | $\neg p$ |
+|---|---|
+| $T$ | $F$ |
+| $F$ | $T$ |
 
 
 
@@ -202,40 +172,28 @@ Order of operations without parentheses:
 
 Here is the truth table for the conditional operation:
 
-$$
-\begin{array}{|c c|c|}
-\hline
-p & q & p \rightarrow q \\
-\hline
-T & T & T \\
-T & F & F \\
-F & T & T \\
-F & F & T \\
-\hline
-\end{array}
-$$
+| $p$ | $q$ | $p \rightarrow q$ |
+|---|---|---|
+| $T$ | $T$ | $T$ |
+| $T$ | $F$ | $F$ |
+| $F$ | $T$ | $T$ |
+| $F$ | $F$ | $T$ |
 
 - A conditional proposition is like a contract between two parties:
   - If you mow Mr. Smith's lawn, then he will pay you
     - The only way for the contract to be broken (F) is for you to mow the lawn and not get paid.
 - In the words of logic, the only way for a conditional statement to be false is if the hypothesis is true and the conclusion is false. If the hypothesis is false, then the statement is true regardless of the conclusion.
 
-$$
-\begin{array}{|c|c|}
-\hline
-\text{Conditional Operation} & \text{English expressions} \\
-\hline
-\text{If p, then q.} & \text{If you mow Mr. Smith's lawn, then he will pay you.} \\
-\text{If p, q.} & \text{If you mow Mr. Smith's lawn, he will pay you.} \\
-\text{q if p.} & \text{Mr. Smith will pay you if you mow his lawn.} \\
-\text{p implies q.} & \text{Mowing Mr. Smith's lawn implies that he will pay you.} \\
-\text{q whenever p.} & \text{Mr. Smith will pay you whenever you mow his lawn.} \\
-\text{p only if q.} & \text{You will mow Mr. Smith's lawn only if he pays you.} \\
-\text{p is sufficient for q.} & \text{Mowing  Mr. Smith's lawn is sufficient for him to pay you.} \\
-\text{q is necessary for p.} & \text{Mr. Smith's paying you is necessary for you to mow his lawn.} \\
-\hline
-\end{array}
-$$
+| Conditional Operation | English expressions |
+|---|---|
+| If p, then q. | If you mow Mr. Smith's lawn, then he will pay you. |
+| If p, q. | If you mow Mr. Smith's lawn, he will pay you. |
+| q if p. | Mr. Smith will pay you if you mow his lawn. |
+| p implies q. | Mowing Mr. Smith's lawn implies that he will pay you. |
+| q whenever p. | Mr. Smith will pay you whenever you mow his lawn. |
+| p only if q. | You will mow Mr. Smith's lawn only if he pays you. |
+| p is sufficient for q. | Mowing  Mr. Smith's lawn is sufficient for him to pay you. |
+| q is necessary for p. | Mr. Smith's paying you is necessary for you to mow his lawn. |
 
 ### The converse, contrapositive, and inverse
 - Three conditional statements related to propositions $p \rightarrow q$ are so common that they have special names.
@@ -248,18 +206,12 @@ $$
   - $p \leftrightarrow q$ is true if *p* and *q* have the same truth values and is false otherwise.
     - $p \leftrightarrow q$ is true if both *p* and *q* are true or both are false.
 
-$$
-\begin{array}{|c c|c|}
-\hline
-p & q & p \leftrightarrow q \\
-\hline
-T & T & T \\
-T & F & F \\
-F & T & F \\
-F & F & T \\
-\hline
-\end{array}
-$$
+| $p$ | $q$ | $p \leftrightarrow q$ |
+|---|---|---|
+| $T$ | $T$ | $T$ |
+| $T$ | $F$ | $F$ |
+| $F$ | $T$ | $F$ |
+| $F$ | $F$ | $T$ |
 
 ### Compound propositions with conditional and biconditional operations
 - The conditional and biconditional operations can be combined with other logical operations
@@ -288,16 +240,10 @@ $$
 
 A truth table can be used to show that two compound propositions are logically equivalent.
 
-$$
-\begin{array}{|c|c|}
-\hline
-p & \neg \neg p \\
-\hline
-T & T \\
-F & F \\
-\hline
-\end{array}
-$$
+| $p$ | $\neg \neg p$ |
+|---|---|
+| $T$ | $T$ |
+| $F$ | $F$ |
 
 ### De Morgan's laws
 - **De Morgan's laws** are logical equivalences that show how to correctly distribute a negation operation inside a parenthesized expression.
@@ -325,34 +271,20 @@ $$
 
 Laws of propositional logic:
 
-$$
-\begin{array}{|c|c|c|}
-\hline
-\text{Idempotent laws:} & p \lor p \equiv p & p \land p \equiv p \\
-\hline
-\text{Associative laws:} & (p \lor q) \lor r \equiv p \lor (q \lor r) & (p \land q) \land r \equiv p \land (q \land r) \\
-\hline
-\text{Commutative laws:} & p \lor q \equiv q \lor p & p \land q \equiv q \land p \\
-\hline
-\text{Distributive laws:} & p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) & p \land (q \lor r) \equiv (p \land q) \lor (p \land r)\\
-\hline
-\text{Identity laws:} & p \lor F \equiv p & p \land T \equiv p \\
-\hline
-\text{Domination laws:} & p \land F \equiv F & p \lor T \equiv T \\
-\hline
-\text{Double negation law:} & \neg \neg p \equiv p \\
-\hline
-\text{Complement laws:} & p \land \neg p \equiv F & p \lor \neg p \equiv T \\
-& \neg T \equiv F & \neg F \equiv T \\
-\hline
-\text{De Morgan's laws:} & \neg(p \lor q) \equiv \neg p \land \neg q & \neg(p \land q) \equiv \neg p \lor \neg q \\
-\hline
-\text{Absorption laws:} & p \lor (p \land q) \equiv p & p \land (p \lor q) \equiv p \\
-\hline
-\text{Conditional identities:} & p \rightarrow q \equiv \neg p \lor q & p \leftrightarrow q \equiv (p \rightarrow q) \lor (q \rightarrow p) \\
-\hline
-\end{array}
-$$
+| Law | Formula 1 | Formula 2 |
+|---|---|---|
+| Idempotent laws: | $p \lor p \equiv p$ | $p \land p \equiv p$ |
+| Associative laws: | $(p \lor q) \lor r \equiv p \lor (q \lor r)$ | $(p \land q) \land r \equiv p \land (q \land r)$ |
+| Commutative laws: | $p \lor q \equiv q \lor p$ | $p \land q \equiv q \land p$ |
+| Distributive laws: | $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$ | $p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$ |
+| Identity laws: | $p \lor F \equiv p$ | $p \land T \equiv p$ |
+| Domination laws: | $p \land F \equiv F$ | $p \lor T \equiv T$ |
+| Double negation law: | $\neg \neg p \equiv p$ | |
+| Complement laws: | $p \land \neg p \equiv F$ | $p \lor \neg p \equiv T$ |
+| | $\neg T \equiv F$ | $\neg F \equiv T$ |
+| De Morgan's laws: | $\neg(p \lor q) \equiv \neg p \land \neg q$ | $\neg(p \land q) \equiv \neg p \lor \neg q$ |
+| Absorption laws: | $p \lor (p \land q) \equiv p$ | $p \land (p \lor q) \equiv p$ |
+| Conditional identities: | $p \rightarrow q \equiv \neg p \lor q$ | $p \leftrightarrow q \equiv (p \rightarrow q) \lor (q \rightarrow p)$ |
 
 ## Video Lecture/Presentation Notes
 ### Short-circuiting
