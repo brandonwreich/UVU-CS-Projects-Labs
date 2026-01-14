@@ -17,6 +17,7 @@
 
 ### 1.2.4
 - c 
+
 $$
 \begin{array}{|c|c|c|c|}
 \hline
@@ -45,6 +46,7 @@ $$
 
 ### 1.3.4
 - c 
+
 $$
 \begin {array}{|c|c|c|c|c|}
 \hline
@@ -74,6 +76,7 @@ $$
 
 ### 1.4.2 
 - b
+
 $$
 \begin{array}{|c|c|c|c|}
 \hline
@@ -89,6 +92,7 @@ $$
 
 ### 1.4.5
 - a
+
 $$
 \begin{array}{|c|c|c|c|c|}
 \hline
@@ -108,6 +112,7 @@ $$
 
 ### 1.5.2
 - c - $(p \rightarrow q) \land (p \rightarrow r) \equiv p \rightarrow (q \land r)$
+
 $$
 \begin{array}{|c|c|}
 \hline
