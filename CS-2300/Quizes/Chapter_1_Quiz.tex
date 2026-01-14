@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Chapter 1 Quiz}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{1.} 
+The code runs forever because the proposition $\neg(p \land q) \lor (p \lor r)$ is a tautology and will never exit the while loop.
+
+$$
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+p & q & r & \neg (p \land q) & p \lor r & \neg (p \land q) \lor (p \lor r) \\
+\hline
+T & T & T & F & T & T \\
+T & T & F & F & T & T \\
+T & F & T & T & T & T \\
+T & F & F & T & T & T \\
+F & T & T & T & T & T \\
+F & T & F & T & F & T \\
+F & F & T & T & T & T \\
+F & F & F & T & F & T \\
+\hline
+\end{array}
+$$
+
+\subsection*{2.}
+$(p \land \neg q) \rightarrow \neg r \equiv (p \land r) \rightarrow q$
+
+$$
+\begin{array}{|c|c|}
+\hline
+(p \land \neg q) \rightarrow \neg r & \\
+\hline
+\neg (p \land \neg q) \lor \neg r & \text{Conditional identity} \\
+\hline
+\neg p \lor \neg \neg q \lor \neg r & \text{DeMorgan's law} \\
+\hline
+\neg p \lor q \lor \neg r & \text{Double negation law} \\
+\hline
+\neg p \lor \neg r \lor q & \text{Commutative law} \\
+\hline
+\neg (p \land r) \lor q & \text{DeMorgan's law} \\
+\hline
+(p \land r) \rightarrow q & \text{Conditional identity} \\
+\hline
+\end{array}
+$$
+
+\end{document}
