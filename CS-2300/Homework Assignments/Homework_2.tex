@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Homework 2}
+\author{Brandon Reich}
+\date{23 January 2026}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{1.6.2}
+\begin{itemize}
+  \item b - True, because when $x = -1$ then $\exists x(x + 2 = 1)$ is true
+\end{itemize}
+
+\subsection*{1.6.3}
+\begin{itemize}
+  \item d - $\forall x(x^2 \geq 0)$
+\end{itemize}
+
+\subsection*{1.6.4}
+\begin{itemize}
+  \item b - True, becuase $P(a) = T$ and the $\exists$ quantifier only requires one value to resolve to true.
+\end{itemize}
+
+\subsection*{1.7.2}
+\begin{itemize}
+  \item a - $\exists x(E(x) \land T(x))$
+  \item d - $\exists x(E(x) \land \neg T(x))$
+\end{itemize}
+
+\subsection*{1.7.4}
+\begin{itemize}
+  \item b - $\forall x(\neg S(x) \land W(x))$
+\end{itemize}
+
+\subsection*{1.8.2}
+\begin{itemize}
+  \item a - $\exists x \neg D(x)$
+    $$
+      \begin{array}{|c|c|}
+      \hline
+      \forall xD(x) &  \\
+      \hline
+      \neg \forall xD(x) & \text{Negation} \\
+      \hline
+      \exists x \neg D(x) & \text{De Morgan's Law} \\
+      \hline
+      \end{array}
+    $$
+  \item c - $\forall x(\neg D(x) \lor \neg M(x))$
+    $$
+      \begin{array}{|c|c|}
+      \hline
+      \exists x(D(x) \land M(x)) &  \\
+      \hline
+      \neg \exists x(D(x) \land M(x)) & \text{Negation} \\
+      \hline
+      \forall x \neg (D(x) \land M(x)) & \text {De Morgan's Law} \\
+      \hline
+      \forall x(\neg D(x) \lor \neg M(x)) & \text{De Morgan's Law} \\
+      \hline
+      \end{array}
+    $$
+\end{itemize}
+
+\subsection*{1.9.3}
+\begin{itemize}
+  \item b - True
+  \item d - False
+\end{itemize}
+
+\subsection*{1.9.4}
+\begin{itemize}
+    \item c - $\forall x \exists y(P(x,y) \land \neg Q(x,y))$
+      $$
+        \begin{array}{|c|c|}
+        \hline
+        \exists x \forall y(P(x,y) \rightarrow Q(x,y)) & \\
+        \hline
+        \neg \exists x \forall y(P(x,y) \rightarrow Q(x,y)) & \text{Negation} \\
+        \hline
+        \neg \exists x \forall y(\neg P(x,y) \lor Q(x,y)) & \text{Biconditional Identity} \\
+        \hline
+        \forall x \exists y \neg (\neg P(x,y) \lor Q(x,y)) & \text{De Morgan's Law} \\
+        \hline
+        \forall x \exists y (\neg \neg P(x,y) \land \neg Q(x,y)) & \text{De Morgan's Law} \\
+        \hline
+        \forall x \exists y (P(x,y) \land \neg Q(x,y)) & \text{Double Negation Law} \\
+        \hline
+        \end{array}
+      $$
+    \item e - $\forall x \forall y \neg P(x,y) \lor \exists x \exists y \neg Q(x,y)$
+     $$
+       \begin{array}{|c|c|}
+       \hline
+       \exists x \exists y P(x,y) \land \forall x \forall y Q(x,y) & \\
+       \hline
+       \neg (\exists x \exists y P(x,y) \land \forall x \forall y Q(x,y)) & \text{Negation} \\
+       \hline
+       \neg \exists x \exists y P(x,y) \lor \neg \forall x \forall y Q(x,y) & \text{De Morgan's Law} \\
+       \hline
+       \forall x \forall y \neg P(x,y) \lor \exists x \exists y \neg Q(x,y) & \text{De Morgan's Law} \\
+       \hline
+       \end{array}
+     $$
+\end{itemize}
+
+\subsection*{1.10.2}
+\begin{itemize}
+  \item a - True because no matter what player 1 ($\forall x$) chooses then player 2 ($\exists y$) can choose $-x$ to always make $x + y = 0$.
+  \item b - False because no matter what player 1 ($\exists x$) chooses then player 2 ($\forall y$) can choose any other number to make $x + y \ne 0$.
+\end{itemize}
+
+\subsection*{1.10.4}
+\begin{itemize}
+  \item a - $\exists x \exists y (y \ne 0 \land \frac{x}{y} < 1)$
+  \item c - $\exists x \exists y (x + y = xy)$
+\end{itemize}
+
+\end{document}

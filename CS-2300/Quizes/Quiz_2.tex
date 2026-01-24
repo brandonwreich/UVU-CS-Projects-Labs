@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{verbatim}
+
+\title{Quiz 2}
+\author{Brandon Reich}
+\date{23 January 2026}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{1.} 
+The code block below verifies $\forall x \forall y\ check\_it(x,y)$ because it makes sure that every combination within the domain resolve to true.
+
+\begin{verbatim}
+result = True
+
+for x in range(1, 1001):
+  for y in range(1, 1001):
+    if not check_it(x,y):
+      result = False
+      break
+
+  if not result:
+    break
+
+print(result)
+\end{verbatim}
+
+\subsection*{2.}
+The code block below verifies $\forall x \exists y\ check\_it(x,y)$ because for each x it searches for one y that works. If found, it moves on to the next x. If there is no working y then it exits and returns false. If every x has a working y then it returns true.
+
+\begin{verbatim}
+result = True
+
+for x in range(1, 1001):
+  for y in range(1, 1001):
+    if check_it(x,y):
+      result = True
+      break
+    else:
+      result = False
+
+  if not result:
+    break
+
+print(result)
+
+\end{verbatim}
+
+\subsection*{3.}
+The code block below verifies $\exists x \forall y\ check\_it(x,y)$ because it searches for an x where all y values return True. If a y value is found false it moves on to the next x value. If all y values pass it exits and returns true. Otherwise it will return false.
+
+\begin{verbatim}
+result = False
+
+for x in range(1, 1001):
+  for y in range(1, 1001):
+    if not check_it(x,y):
+      result = False
+      break
+    else:
+      result = True
+
+  if result:
+    break
+
+print(result)
+\end{verbatim}
+
+\subsection*{4.}
+The code block below verifies $\exists x \exists y\ check\_it(x,y)$ because as soon as it finds an x and y value that returns true, the loops exit and return true. Otherwise it returns false.
+
+\begin{verbatim}
+result = False
+
+for x in range(1, 1001):
+  for y in range(1,1001):
+    if check_it(x,y):
+      result = True
+      break
+
+  if result:
+    break
+
+print(result)
+\end{verbatim}
+
+\end{document}
