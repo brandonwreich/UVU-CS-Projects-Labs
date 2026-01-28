@@ -47,7 +47,7 @@ $$
 \begin{array}{c}
 \neg p \\
 p \rightarrow q \\
-\hline \\
+\hline
 \therefore \neg q \\
 \end{array}
 $$
@@ -62,7 +62,7 @@ $$
 \begin{array}{c}
 \text{It is raining today.} \\
 \text{If it is raining today, I will not ride my bike to school.} \\
-\hline \\
+\hline
 \therefore \text{I will not ride my bike to school.} \\
 \end{array}
 $$
@@ -81,7 +81,7 @@ $$
 \begin{array}{c}
 p \\
 p \rightarrow q \\
-\hline \\
+\hline
 \therefore q
 \end{array}
 $$
@@ -104,7 +104,7 @@ $$
 \begin{array}{c}
 \neg p \\
 p \rightarrow q \\
-\hline \\
+\hline
 \therefore \neg q \\
 \end{array}
 $$
@@ -121,14 +121,14 @@ $$
 
 | Rules of inference | Name |
 |---|---|
-| $\begin{array}{c} p \\ p \rightarrow q \\ \hline \\ \therefore q \end{array}$ | Modus ponens |
-| $\begin{array}{c} \neg q \\ p \rightarrow q \\ \hline \\ \therefore q \end{array}$ | Modus tollens |
-| $\begin{array}{c} p \\ \hline \\ \therefore p \lor q \end{array}$ | Addition |
-| $\begin{array}{c} p \land q \\ \hline \\ \therefore p \end{array}$ | Simplification |
-| $\begin{array}{c} p \\ q \\ \hline \\ \therefore p \land q \end{array}$ | Conjunction |
-| $\begin{array}{c} p \rightarrow q \\ q \rightarrow r \\ \hline \\ \therefore p \rightarrow r \end{array}$ | Hypothetical syllogism |
-| $\begin{array}{c} p \lor q \\ \neg p \\ \hline \\ \therefore q \end{array}$ | Disjunctive syllogism |
-| $\begin{array}{c} p \lor q \\ \neg p \lor r \\ \hline \\ \therefore q \lor r \end{array}$ | Resolution |
+| $\begin{array}{c} p \\ p \rightarrow q \\ \hline \therefore q \end{array}$ | Modus ponens |
+| $\begin{array}{c} \neg q \\ p \rightarrow q \\ \hline \therefore q \end{array}$ | Modus tollens |
+| $\begin{array}{c} p \\ \hline \therefore p \lor q \end{array}$ | Addition |
+| $\begin{array}{c} p \land q \\ \hline \therefore p \end{array}$ | Simplification |
+| $\begin{array}{c} p \\ q \\ \hline \therefore p \land q \end{array}$ | Conjunction |
+| $\begin{array}{c} p \rightarrow q q \rightarrow r \\ \hline \therefore p \rightarrow r \end{array}$ | Hypothetical syllogism |
+| $\begin{array}{c} p \lor q \\ \neg p \\ \hline \therefore q \end{array}$ | Disjunctive syllogism |
+| $\begin{array}{c} p \lor q \\ \neg p \lor r \\ \hline \therefore q \lor r \end{array}$ | Resolution |
 
 - The validity of an argument can be established by applying the rules of inference and laws of propositional logic in a **logical proof**.
   - A logical proof of an argument is a sequence of steps, each consisting of a proposition and a justification.
@@ -139,7 +139,7 @@ $$
 \begin{array}{c}
 \text{If it is raining or windy or both, the game will be cancelled.} \\
 \text{The game will not be cancelled} \\
-\hline \\
+\hline
 \text{It is not windy.}
 \end{array}
 $$
@@ -160,7 +160,7 @@ $$
 \begin{array}{c}
 (r \lor w) \rightarrow c \\
 \neg c \\
-\hline \\
+\hline
 \therefore \neg w
 \end{array}
 $$
@@ -204,10 +204,10 @@ $$
 
 | Rule of Inference | Name | Example |
 |---|---|---|
-| $\begin{array}{c} c \text{ is an element (arbitrary or particular)} \\ \forall xP(x) \\ \hline \\ \therefore P(c) \end{array}$ | Universal instantiation | $\begin{array}{c} \text{Izar is a student in the class.} \\ \text{Every student in the class completed the assignment.} \\ \text{Therefore, Izar completed the assignment.} \end{array}$ |
-| $\begin{array}{c} c \text{ is an element (arbitrary or particular)} \\ P(c) \\ \hline \\ \therefore \forall xP(c) \end{array}$ | Universal generalization | $\begin{array}{c} \text{Let c be an arbitrary integer} \\ c \le c^2 \\ \text{Therefore, every integer is less than or equal to its square} \end{array}$ |
-| $\begin{array}{c} \exists xP(x) \\ \hline \\ \therefore (c \text{ is a particular element}) \land P(c) \end{array}$ | Existential instantion* | $\begin{array}{c} \text{There is an integer that is equal to its square} \\ \text{Therefore, } c^2 = c \text{, for some integer } c \end{array}$ |
-| $\begin{array}{c} c \text{ is an element (arbitrary or particular)} \\ P(c) \\ \hline \\ \therefore \exists xP(x) \end{array}$ | Existential generalization | $\begin{array}{c} \text{Sam is a particular student in the class.} \\ \text{Sam completed the assignment.} \\ \text{Therefore, there is a student in the class who completed the assignment.} \end{array}$ |
+| $\begin{array}{c} c \text{ is an element (arbitrary or particular)} \\ \forall xP(x) \\ \hline \therefore P(c) \end{array}$ | Universal instantiation | $\begin{array}{c} \text{Izar is a student in the class.} \\ \text{Every student in the class completed the assignment.} \\ \text{Therefore, Izar completed the assignment.} \end{array}$ |
+| $\begin{array}{c} c \text{ is an element (arbitrary or particular)} \\ P(c) \\ \hline \therefore \forall xP(c) \end{array}$ | Universal generalization | $\begin{array}{c} \text{Let c be an arbitrary integer} \\ c \le c^2 \\ \text{Therefore, every integer is less than or equal to its square} \end{array}$ |
+| $\begin{array}{c} \exists xP(x) \\ \hline \therefore (c \text{ is a particular element}) \land P(c) \end{array}$ | Existential instantion* | $\begin{array}{c} \text{There is an integer that is equal to its square} \\ \text{Therefore, } c^2 = c \text{, for some integer } c \end{array}$ |
+| $\begin{array}{c} c \text{ is an element (arbitrary or particular)} \\ P(c) \\ \hline \therefore \exists xP(x) \end{array}$ | Existential generalization | $\begin{array}{c} \text{Sam is a particular student in the class.} \\ \text{Sam completed the assignment.} \\ \text{Therefore, there is a student in the class who completed the assignment.} \end{array}$ |
 
 *Each use of existential instantiation must define a new element with its own name (Ex: $c$ or $d$).
 
