@@ -122,11 +122,11 @@ $$
 | Rules of inference | Name |
 |---|---|
 | $\begin{array}{c} p \\ p \rightarrow q \\ \hline \therefore q \end{array}$ | Modus ponens |
-| $\begin{array}{c} \neg q \\ p \rightarrow q \\ \hline \therefore q \end{array}$ | Modus tollens |
+| $\begin{array}{c} \neg q \\ p \rightarrow q \\ \hline \therefore \neg p \end{array}$ | Modus tollens |
 | $\begin{array}{c} p \\ \hline \therefore p \lor q \end{array}$ | Addition |
 | $\begin{array}{c} p \land q \\ \hline \therefore p \end{array}$ | Simplification |
 | $\begin{array}{c} p \\ q \\ \hline \therefore p \land q \end{array}$ | Conjunction |
-| $\begin{array}{c} p \rightarrow q q \rightarrow r \\ \hline \therefore p \rightarrow r \end{array}$ | Hypothetical syllogism |
+| $\begin{array}{c} p \rightarrow q \\ q \rightarrow r \\ \hline \therefore p \rightarrow r \end{array}$ | Hypothetical syllogism |
 | $\begin{array}{c} p \lor q \\ \neg p \\ \hline \therefore q \end{array}$ | Disjunctive syllogism |
 | $\begin{array}{c} p \lor q \\ \neg p \lor r \\ \hline \therefore q \lor r \end{array}$ | Resolution |
 

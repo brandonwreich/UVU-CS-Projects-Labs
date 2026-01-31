@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Quiz 3}
+\author{Brandon Reich}
+\date{30 January 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+$P(x):$ A musician practices hard \\
+$B(x):$ A musician plays badly
+
+$$
+\begin{array}{c}
+    \text{Form of the argument} \\
+    \hline \\
+    \forall x(P(x) \lor B(x)) \\
+    \exists x(\neg P(x)) \\
+    \hline
+    \therefore \exists x(B(x)) \\
+\end{array}
+$$
+\\
+\begin{center}
+Proof
+\end{center}
+$$
+\begin{array}{|c|c|c|}
+    \hline
+    1. & \forall x(P(x) \lor B(x)) & \text{Hypothesis} \\
+    \hline
+    2. & c \text{ is a particular element in the domain} & \text{Element definition} \\
+    \hline
+    3. & P(c) \lor B(c) & \text{Universal instansitation } 1,2 \\
+    \hline
+    4. & \exists x(\neg P(x)) & \text{Hypothesis} \\
+    \hline
+    5. & c \land \neg P(c) & \text{Existential instantion } 2,4 \\
+    \hline
+    6. & c & \text{Simplification } 5 \\
+    \hline
+    7. & \neg P(c) \land c & \text{Commutative law } 5\\
+    \hline
+    8. & \neg P(c) & \text{Simplification } 7 \\
+    \hline
+    9. & B(c) & \text{Disjunctive syllogism } 3,8 \\
+    \hline
+    10. & \exists x(B(x)) & \text{Existential generalization } 6, 9 \\
+    \hline
+\end{array}
+$$
+
+\subsection*{2.}
+
+The proof provided by AI is wrong. In the scenario it states that Student 3 got a C, did not miss class, and received a detention. When it makes its conclusion that the proof is invalid it states that the argument is invalid due to Student 3 getting detention and missing class. It should fix it by stating that student 3 got a C, missed class, and received a detention. By correcting that piece of the scenario the proof would then be invalid.
+
+\end{document}
