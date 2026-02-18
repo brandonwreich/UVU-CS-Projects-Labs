@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+
+
+\title{Quiz 5}
+\author{Brandon Reich}
+\date{17 February 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+The set subtraction law states that $A - B = A \cap \overline{B}$. Use the set subtraction law and the other set identities given in the table to prove that $A - (B \cap A) = A - B$. \\[1em]
+\textcolor{blue}{Proof:} \\
+\textcolor{blue}{$A - (B \cap A)$} \\
+\textcolor{blue}{$= A \cap \overline{(B \cap A)}$ \hfill (Set subtraction law)} \\
+\textcolor{blue}{$= A \cap (\overline{B} \cup \overline{A})$ \hfill (De Morgan's law)} \\
+\textcolor{blue}{$= (A \cap \overline{B}) \cup (A \cap \overline{A})$ \hfill (Distributive law)} \\
+\textcolor{blue}{$= (A \cap \overline{B}) \cup \emptyset$ \hfill (Complement law)} \\
+\textcolor{blue}{$= A \cap \overline{B}$ \hfill (Identity law)} \\
+\textcolor{blue}{$= A - B$ \hfill (Set subtraction law)} $\blacksquare$
+
+\subsection*{2.}
+Prove that $A - (B \cap A) = A - B$ using an element-wise proof. \\[1em]
+\textcolor{blue}{Proof:} \\[0.5em]
+\textcolor{blue}{\textbf{Part 1:} Show $A - (B \cap A) \subseteq A - B$.} \\
+\textcolor{blue}{Let $x \in A - (B \cap A)$. Then $x \in A$ and $x \notin (B \cap A)$.} \\
+\textcolor{blue}{Since $x \notin (B \cap A)$, it is not the case that both $x \in B$ and $x \in A$.} \\
+\textcolor{blue}{Since we know $x \in A$, it must be that $x \notin B$.} \\
+\textcolor{blue}{Therefore $x \in A$ and $x \notin B$, so $x \in A - B$.} \\[0.5em]
+\textcolor{blue}{\textbf{Part 2:} Show $A - B \subseteq A - (B \cap A)$.} \\
+\textcolor{blue}{Let $x \in A - B$. Then $x \in A$ and $x \notin B$.} \\
+\textcolor{blue}{Since $x \notin B$, it cannot be the case that $x \in B \cap A$ (because that would require $x \in B$).} \\
+\textcolor{blue}{So $x \notin (B \cap A)$.} \\
+\textcolor{blue}{Therefore $x \in A$ and $x \notin (B \cap A)$, so $x \in A - (B \cap A)$.} \\[0.5em]
+\textcolor{blue}{Since $A - (B \cap A) \subseteq A - B$ and $A - B \subseteq A - (B \cap A)$, we conclude $A - (B \cap A) = A - B$.} $\blacksquare$
+
+\end{document}

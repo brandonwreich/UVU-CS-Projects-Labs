@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amssymb}
+\newcommand{\Z}{\mathbb{Z}}
+
+\title{Homework 5}
+\author{Brandon Reich}
+\date{17 February 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{3.1.2}
+\begin{itemize}
+    \item a) False
+    \item b) True
+    \item c) True
+    \item e) False
+    \item h) True
+\end{itemize}
+
+\subsection*{3.1.5}
+\begin{itemize}
+    \item a) $A = \{ x \in \Z : -2 \le x \le 2 \}$. $|A| = 5$.
+    \item b) $A = \{ x \in \Z^+ : \frac{x}{3} \}$. The set is infinite.
+\end{itemize}
+
+\subsection*{3.2.2}
+\begin{itemize}
+    \item b) $P(\{1,2\}) = \{\emptyset, \{1\},\{2\},\{1,2\}\}$
+\end{itemize}
+
+\subsection*{3.2.4}
+\begin{itemize}
+    \item b) $\{\{2\},\{1,2\},\{2,3\},\{1,2,3\}\}$
+\end{itemize}
+
+\subsection*{3.2.5}
+\begin{itemize}
+    \item a) True
+    \item c) True
+    \item d) More information is required
+    \item e) False
+\end{itemize}
+
+\subsection*{3.3.1}
+\begin{itemize}
+    \item d) $A \cup (B \cap C) = \{-3, 0, 1, 4, 17\} \cup \{-5, 1\} = \{-5, -3, 0, 1, 4, 17\}$
+    \item e) $A \cap B \cap C = \{1, 4\} \cap C = \{1\}$
+    \item g) $(A \cup B) \cap C = \{-12, -5, -3, 0, 1, 4, 6, 17\} \cap C = \{-5, -3, 1, 17\}$
+\end{itemize}
+
+\subsection*{3.3.4}
+\begin{itemize}
+    \item b) $P(A \cup B) = P(\{a, b, c\}) = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\}$
+    \item d) $P(A) \cup P(B) = \{\emptyset, \{a\}, \{b\}, \{a,b\}\} \cup \{\emptyset, \{b\}, \{c\}, \{b,c\}\} = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{b,c\}\}$
+\end{itemize}
+
+\subsection*{3.4.2}
+\begin{itemize}
+    \item a) $A \oplus B = \{3, 4, 5, 6\}$. $(A \oplus B) \oplus C = \{3, 4, 5, 6\} \oplus \{1, 3, 4, 7\} = \{1, 5, 6, 7\}$
+    \item b) An element is in $A \oplus B \oplus C$ if and only if it belongs to an odd number of the sets $A$, $B$, and $C$.
+\end{itemize}
+
+\subsection*{3.4.5}
+\begin{itemize}
+    \item b) $A \oplus A = \emptyset$
+    \item d) $A \oplus A \oplus A = (A \oplus A) \oplus A = \emptyset \oplus A = A$
+    \item e) $A \oplus (A \oplus B) = (A \oplus A) \oplus B = \emptyset \oplus B = B$
+\end{itemize}
+
+\subsection*{3.5.2}
+\begin{itemize}
+    \item b) $(B \cup A) \cap (\overline{B} \cup A) = A \cup (B \cap \overline{B})$ (Distributive law) $= A \cup \emptyset$ (Complement law) $= A$ (Identity law)
+    \item f) $A \cap (B \cap \overline{B}) = A \cap \emptyset$ (Complement law) $= \emptyset$ (Domination law)
+\end{itemize}
+
+\subsection*{3.6.3}
+\begin{itemize}
+    \item a) False
+    \item c) True
+    \item e) True
+\end{itemize}
+
+\subsection*{3.6.4}
+\begin{itemize}
+    \item a) $A^2 = \{++, +-, -+, --\}$
+    \item b) $A^3 = \{000, 001, 010, 011, 100, 101, 110, 111\}$
+\end{itemize}
+
+\subsection*{3.6.5}
+\begin{itemize}
+    \item a) $|\{0,1\}^7| = 2^7 = 128$
+    \item b) $|\{a,b,c,d\}^3| = 4^3 = 64$
+\end{itemize}
+
+\subsection*{3.7.3}
+\begin{itemize}
+    \item a) No. $A \cup B \cup C = (-\infty, -2) \cup (2, \infty) \cup (-2, 2) = \mathbb{R} \setminus \{-2, 2\}$. The sets do not cover all of $\mathbb{R}$; the values $-2$ and $2$ are missing.
+    \item b) Yes.
+    \item c) No. $D \cap E = \{-2\} \neq \emptyset$. The sets are not pairwise disjoint since both $D$ and $E$ contain $-2$.
+\end{itemize}
+
+\end{document}

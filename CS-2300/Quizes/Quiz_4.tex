@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+
+
+\title{Quiz 4}
+\author{Brandon Reich}
+\date{6 February 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+Write a direct proof to show that if x is a real number and $x \le 3$, then $12 - 7x + x^2 \ge 0$. \\[1em]
+\textcolor{blue}{Theorem: If $x$ is a real number and $x \le 3$ then $12 - 7x + x^2 \ge 0$.} \\[1em]
+\textcolor{blue}{Proof:} \\
+\textcolor{blue}{Let $x$ be an arbitrary real number. Assume that $x \le 3$. We will show that $12 - 7x + x^2 \ge 0$.} \\
+\textcolor{blue}{Starting with the hypothesis $x \le 3$, subtract x from both sides which gives $3 - x \ge 0$} \\
+\textcolor{blue}{Since $4 - x$ is one more than $3 - x$, we have $4 - x > 3 - x \ge 0$ thus $4 - x \ge 0$.} \\
+\textcolor{blue}{Since both $4 - x$ and $3 - x$ are greater than equal to 0, then the product is also greater than or equal to 0, $(3 - x)(4 - x) \ge 0$.} \\
+\textcolor{blue}{Multiply the product: $(3 - x)(4 - x) = 12 - 7x + x^2$.} \\
+\textcolor{blue}{Therefore $12 - 7x + x^2 \ge 0.$} $\blacksquare$
+
+\subsection*{2}
+Prove by contrapositive:  for every pair of positive real numbers $x$ and $y$, if $xy > 400$ then $x > 20$ or $y > 20$. Please include the contrapositive form of the original statement in your proof. \\[1em]
+\textcolor{blue}{Theorem: For every pair of positive real number $x$ and $y$, if $xy > 400$, then $x > 20$ or $y > 20$.} \\[1em]
+\textcolor{blue}{Proof:} \\
+\textcolor{blue}{Let $x$ and $y$ be arbitrary positive real numbers. Assume the contrapositive hypothesis $x \le 20$ and $y \le 20$. We will show that if $x \le 20$ and $y \le 20$ then $xy \le 400$} \\
+\textcolor{blue}{Because $x$ and $y$ are positive and $y \le 20$, we can multiply both sides of $y \le 20$ by $x$ without reversing the inequality, $xy \le 20x$.} \\
+\textcolor{blue}{Since $x \le 20$, we multiply both sides of $x \le 20$ by 20, $20x \le 20 * 20 = 400$.} \\
+\textcolor{blue}{Combining these results give: $xy \le 20x \le 400$.} \\
+\textcolor{blue}{Thus $xy \le 400$.} $\blacksquare$
+
+\end{document}
