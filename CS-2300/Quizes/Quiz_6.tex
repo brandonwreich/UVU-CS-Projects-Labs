@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{Quiz 6}
+\author{Brandon Reich}
+\date{24 February 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+Given functions $f: A \rightarrow B$ and $g: B \rightarrow C$. If $f$ and $g$ are both bijections, show that the composition $g \circ f: A \rightarrow C$ is also a bijection. Hint: show that it is both injective and surjective. \\[1em]
+\textcolor{blue}{Proof:} \\[0.5em]
+\textcolor{blue}{\textbf{Injective:} Let $a_1, a_2 \in A$ such that $(g \circ f)(a_1) = (g \circ f)(a_2)$.} \\
+\textcolor{blue}{Then $g(f(a_1)) = g(f(a_2))$.} \\
+\textcolor{blue}{Since $g$ is injective, $f(a_1) = f(a_2)$.} \\
+\textcolor{blue}{Since $f$ is injective, $a_1 = a_2$.} \\
+\textcolor{blue}{Therefore $g \circ f$ is injective.} \\[0.5em]
+\textcolor{blue}{\textbf{Surjective:} Let $c \in C$.} \\
+\textcolor{blue}{Since $g$ is surjective, there exists $b \in B$ such that $g(b) = c$.} \\
+\textcolor{blue}{Since $f$ is surjective, there exists $a \in A$ such that $f(a) = b$.} \\
+\textcolor{blue}{Then $(g \circ f)(a) = g(f(a)) = g(b) = c$.} \\
+\textcolor{blue}{Therefore $g \circ f$ is surjective.} \\[0.5em]
+\textcolor{blue}{Since $g \circ f$ is both injective and surjective, $g \circ f$ is a bijection.} $\blacksquare$
+
+\subsection*{2.}
+Given bijective functions $f: \mathbb{R} \rightarrow \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}$. The following proof was generated using AI to show that $f + g$ is also a bijection:
+
+\begin{quote}
+Let $f: \mathbb{R} \rightarrow \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}$ be bijective functions. We define a new function $h = f + g$ such that for all $x \in \mathbb{R}$, $h(x) = f(x) + g(x)$.
+
+Since $f$ and $g$ are both bijective, they are both injective and surjective.
+
+\begin{enumerate}
+\item \textbf{Injectivity:} Let $h(x_1) = h(x_2)$. Then $f(x_1) + g(x_1) = f(x_2) + g(x_2)$. Since $f$ and $g$ are injective, this implies that $f(x_1) = f(x_2)$ and $g(x_1) = g(x_2)$, so $x_1 = x_2$. Therefore, $h$ is injective.
+\item \textbf{Surjectivity:} Let $y \in \mathbb{R}$. Since $f$ and $g$ are surjective, there exist $x_1, x_2 \in \mathbb{R}$ such that $f(x_1) = y$ and $g(x_2) = 0$. So $h(x_1) = f(x_1) + g(x_1) = y + 0 = y$. Therefore, $h$ is surjective.
+\end{enumerate}
+
+Thus, $h = f + g$ is a bijection.
+\end{quote}
+
+Is the proof correct? If yes, explain why. If not, state where the given proof is incorrect (list all places where it fails). Then either fix the given proof or provide your own for the correct result. \\[1em]
+\textcolor{blue}{The proof is incorrect. The errors are:} \\[0.5em]
+\textcolor{blue}{\textbf{Error 1 (Injectivity):} From $f(x_1) + g(x_1) = f(x_2) + g(x_2)$, the proof concludes that $f(x_1) = f(x_2)$ and $g(x_1) = g(x_2)$. This does not follow. The equality of two sums does not imply the individual terms are pairwise equal. For example, $2 + 5 = 3 + 4$ but $2 \neq 3$ and $5 \neq 4$. Injectivity of $f$ and $g$ does not justify splitting the sum equality into component equalities.} \\[0.5em]
+\textcolor{blue}{\textbf{Error 2 (Surjectivity):} The proof finds $x_1$ such that $f(x_1) = y$ and $x_2$ such that $g(x_2) = 0$, but then evaluates $h(x_1) = f(x_1) + g(x_1)$ and claims $g(x_1) = 0$. However, $g(x_2) = 0$ does not imply $g(x_1) = 0$ since $x_1$ and $x_2$ may be different values.} \\[0.5em]
+\textcolor{blue}{\textbf{The statement itself is false.} The sum of two bijections is not necessarily a bijection.} \\[0.5em]
+\textcolor{blue}{\textbf{Counterexample:} Let $f(x) = x$ and $g(x) = -x$. Both $f$ and $g$ are bijections from $\mathbb{R}$ to $\mathbb{R}$. However, $h(x) = f(x) + g(x) = x + (-x) = 0$ for all $x \in \mathbb{R}$. The function $h$ is the constant function $h(x) = 0$, which is neither injective (e.g., $h(1) = h(2) = 0$ but $1 \neq 2$) nor surjective (e.g., there is no $x$ such that $h(x) = 1$). Therefore $h = f + g$ is not a bijection, and the claim is false.} $\blacksquare$
+
+\end{document}

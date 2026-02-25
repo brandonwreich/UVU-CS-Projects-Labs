@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Homework 6}
+\author{Brandon Reich}
+\date{24 February 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{4.1.1}
+\begin{itemize}
+    \item a) What is the domain of $f$? \\
+    \textcolor{blue}{$a,b,c,d,e$}
+    \item b) What is the target of $f$? \\
+    \textcolor{blue}{$w,x,y,z$}
+    \item c) What is the range of $f$? \\
+    \textcolor{blue}{$w,y,z$}
+\end{itemize}
+
+\subsection*{4.1.3}
+Which of the following are functions from $\mathbb{R}$ to $\mathbb{R}$? If $f$ is a function the give the range.
+\begin{itemize}
+    \item a) $f(x) = \sqrt{x}$ \\
+    \textcolor{blue}{Not a function}
+    \item b) $f(x) = \frac{1}{x^2-4}$ \\
+    \textcolor{blue}{Not a function}
+    \item c) $f(x) = \sqrt{x^2}$ \\
+    \textcolor{blue}{Function. Range $y \ge 0$}
+\end{itemize}
+
+\subsection*{4.1.6}
+Indicate whether the two functions are equal. If the two functions are not equal, then give an element of the domain on which the two functions have different values.
+\begin{itemize}
+    \item a) \textcolor{blue}{Equal} \\
+    $f: \mathbb{Z} \rightarrow \mathbb{Z}$, where $f(x) = x^2$ \\
+    $g: \mathbb{Z} \rightarrow \mathbb{Z}$, where $g(x) = |x|^2$
+    \item b) \textcolor{blue}{Not equal. $f(-1) = -1, g(-1) = 1$} \\
+    $f: \mathbb{Z} \rightarrow \mathbb{Z}$, where $f(x) = x^3$ \\
+    $g: \mathbb{Z} \rightarrow \mathbb{Z}$, where $g(x) = |x|^3$ 
+\end{itemize}
+
+\subsection*{4.2.2}
+\begin{itemize}
+    \item a) There are $x$ children in the first grade at Lee Elementary school. Each child will be given five crayons to do an art project. Crayons come in boxes of $24$. How many boxes need to be purchased for the art project? \\
+    \textcolor{blue}{$\lceil \frac{5x}{24} \rceil$}
+    \item b) A baker is packaging cookies for sale in boxes of eight. The baker has $x$ cookies to put into boxes. How many boxes can the baker sell? \\
+    \textcolor{blue}{$\lfloor \frac{x}{8} \rfloor$}
+\end{itemize}
+
+\subsection*{4.2.3}
+\begin{itemize}
+    \item d) $\lfloor \lfloor 3.5 \rfloor - 4.3 \rfloor = $ \textcolor{blue}{$-2$}
+    \item e) $\lfloor \frac{3}{2} + \lceil \frac{1}{3} \rceil \rfloor = $ \textcolor{blue}{$2$}
+\end{itemize}
+
+\subsection*{4.3.2}
+For each of the functions below, indicate whether the function is onto, one-to-one, neither or both. If the function is not onto or not one-to-one, give an example showing why.
+\begin{itemize}
+    \item a) $f: \mathbb{R} \rightarrow \mathbb{R}$ $f(x) = x^2$ \\
+    \textcolor{blue}{Neither. Not one to one because $f(1) = f(-1) = 1$. Not onto because $f(x) \ne -1$ }
+    \item b) $g: \mathbb{R} \rightarrow \mathbb{R}$ $g(x) = x^3$ \\
+    \textcolor{blue}{Both}
+    \item c) $h: \mathbb{Z} \rightarrow \mathbb{Z}$ $h(x) = x^3$ \\
+    \textcolor{blue}{One to one. Not onto because $h(x) \ne 2$.}
+\end{itemize}
+
+\subsection*{4.3.4}
+For each of the functions below, indicate whether the function is onto, one-to-one, neither or both. If the function is not onto or not one-to-one, give an example showing why.
+\begin{itemize}
+    \item a) $f: \{0,1\}^4 \rightarrow \{0,1\}^3$ \\
+    \textcolor{blue}{Onto. Not one to one becuase, $f(1111) = f(0111) = 111$.}
+    \item c) $f: \{0,1\}^3 \rightarrow \{0,1\}^3$ \\
+    \textcolor{blue}{Both}
+\end{itemize}
+
+\subsection*{4.4.1}
+Each of the arrow diagrams below define a function $f$. For each arrow diagram, indicate whether $f^{-1}$ is well-defined. If $f^{-1}$ is not well-defined, indicate why. If $f^{-1}$ is well-defined, give an arrow diagram showing $f^{-1}$.
+\begin{itemize}
+    \item a) \textcolor{blue}{Not well defined $f^{-1}$ because $w$ has 2 outgoing arrows}
+    \item b) \textcolor{blue}{Well defined $f^{-1}$.} \\
+    \textcolor{blue}{$v \rightarrow b$} \\
+    \textcolor{blue}{$w \rightarrow d$} \\
+    \textcolor{blue}{$x \rightarrow e$} \\
+    \textcolor{blue}{$y \rightarrow a$} \\
+    \textcolor{blue}{$z \rightarrow c$}
+\end{itemize}
+
+\subsection*{4.4.2}
+For each of the following functions, indicate whether the function has a well-defined inverse. If the inverse is well-defined, give the input/output relationship of $f^{-1}$.
+\begin{itemize}
+    \item c) $f: \mathbb{R} \rightarrow \mathbb{R}$ $f(x) = 2x + 3$ \\
+    \textcolor{blue}{Well defined $f^{-1}$. The input/output relationship is $x = \frac{y-3}{2}$.}
+    \item h) $f: \{0,1\}^3 \rightarrow \{0,1\}^3$ \\
+    \textcolor{blue}{Well defined $f^{-1}$. The input/output relationship is $x$.}
+\end{itemize}
+
+\subsection*{4.5.1}
+\begin{itemize}
+    \item a) What is the domain of $g \circ f$? \\
+    \textcolor{blue}{a,b,c,d,e}
+    \item b) What is the target of $g \circ f$? \\
+    \textcolor{blue}{1,2,3,4,5}
+    \item c) Give the arow diagram of $g \circ f$. \\
+    \textcolor{blue}{$v \rightarrow 4$} \\
+    \textcolor{blue}{$w \rightarrow 1$} \\
+    \textcolor{blue}{$x \rightarrow 4$} \\
+    \textcolor{blue}{$y \rightarrow 3$} \\
+    \textcolor{blue}{$z \rightarrow 4$}
+    \item d) What is the range of $g \circ f$? \\
+    \textcolor{blue}{1,3,4}
+\end{itemize}
+
+\subsection*{4.5.2}
+Consider the three functions $f,g,h$ with the domain $\mathbb{Z}^+$. Let $f(x) = x^2$, $g(x) = 2^x$, and $h(x) = \lceil \frac{x}{5} \rceil$.
+\begin{itemize}
+    \item b) $(f \circ h)(52) = $ \textcolor{blue}{$121$}
+    \item e) Give the mathematical expression for $f \circ g$. \\
+    \textcolor{blue}{$f \circ g = (2^x)^2$}
+\end{itemize}
+
+\subsection*{4.5.6}
+\begin{itemize}
+    \item a) What is $(g \circ f)(010)$? \\
+    \textcolor{blue}{$g(f(010)) = g(110) = 011$}
+\end{itemize}
+
+\subsection*{4.5.8}
+\begin{itemize}
+    \item b) $g \circ f$ \\
+    \textcolor{blue}{$g \circ f = 5(2x + 3) + 7 = 10x + 22$}
+\end{itemize}
+
+\subsection*{4.6.1}
+For each expression, give an equivalent expression that is a power of 6. Each answer should have the form $6^*$, where $*$ is an expression with numbers and possibly the variable $k$.
+\begin{itemize}
+    \item b) $(6^{2k})^3 = $ \textcolor{blue}{$6^{6k}$}
+    \item d) $\frac{6^{2k-1}}{6^{-k}} = $ \textcolor{blue}{$6^{3k-1}$}
+\end{itemize}
+
+\subsection*{4.6.2}
+For each expression, give an equivalent expression that is of the form $\log_{5} *$, where $*$ is an expression with numbers and possibly the variable $k$.
+\begin{itemize}
+    \item a) $\log_5 k + \log_5 2 = $ \textcolor{blue}{$\log_5(2k)$}
+    \item e) $\frac{\log_3(k^2)}{\log_3 25} = $ \textcolor{blue}{$\log_5(k)$}
+\end{itemize}
+
+\end{document}
