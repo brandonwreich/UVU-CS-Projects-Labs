@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{Quiz 7}
+\author{Brandon Reich}
+\date{6 March 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+Prove that the transitive closure of a symmetric relation is also symmetric. \\[1em]
+\textcolor{blue}{Proof:} \\[0.5em]
+\textcolor{blue}{Let $R$ be a symmetric relation on a set $A$, and let $R^+$ denote its transitive closure.} \\
+\textcolor{blue}{Suppose $(a, b) \in R^+$. By definition of transitive closure, there exist elements $c_1, c_2, \ldots, c_n \in A$ with $n \geq 2$ such that $c_1 = a$, $c_n = b$, and $(c_i, c_{i+1}) \in R$ for all $1 \leq i \leq n - 1$.} \\[0.5em]
+\textcolor{blue}{Since $R$ is symmetric, $(c_{i+1}, c_i) \in R$ for each $1 \leq i \leq n - 1$.} \\[0.5em]
+\textcolor{blue}{Consider the sequence $c_n, c_{n-1}, \ldots, c_1$. We have $(c_n, c_{n-1}) \in R$, $(c_{n-1}, c_{n-2}) \in R$, $\ldots$, $(c_2, c_1) \in R$. This is a path from $b = c_n$ to $a = c_1$ in $R$.} \\[0.5em]
+\textcolor{blue}{Therefore $(b, a) \in R^+$.} \\[0.5em]
+\textcolor{blue}{Since $(a, b) \in R^+$ implies $(b, a) \in R^+$, the transitive closure $R^+$ is symmetric.} $\blacksquare$
+
+\subsection*{2.}
+(a) Use the result from Problem 1 to show that if $R$ is reflexive and symmetric, then $R^+$ is an equivalence relation. \\[1em]
+\textcolor{blue}{Proof:} \\[0.5em]
+\textcolor{blue}{We must show that $R^+$ is reflexive, symmetric, and transitive.} \\[0.5em]
+\textcolor{blue}{\textbf{Reflexive:} Since $R$ is reflexive, $(a, a) \in R$ for all $a \in A$. Since $R \subseteq R^+$, we have $(a, a) \in R^+$ for all $a \in A$. Therefore $R^+$ is reflexive.} \\[0.5em]
+\textcolor{blue}{\textbf{Symmetric:} Since $R$ is symmetric, by the result of Problem 1, $R^+$ is symmetric.} \\[0.5em]
+\textcolor{blue}{\textbf{Transitive:} By definition, the transitive closure $R^+$ is transitive.} \\[0.5em]
+\textcolor{blue}{Since $R^+$ is reflexive, symmetric, and transitive, $R^+$ is an equivalence relation.} $\blacksquare$ \\[2em]
+(b) Is it possible to have a relation $R$ that is symmetric but $R^+$ is \textbf{not} an equivalence relation? \\[1em]
+\textcolor{blue}{Yes. Let $A = \{1, 2, 3\}$ and $R = \{(1, 2), (2, 1)\}$.} \\[0.5em]
+\textcolor{blue}{$R$ is symmetric since $(1, 2) \in R$ and $(2, 1) \in R$.} \\[0.5em]
+\textcolor{blue}{The transitive closure is $R^+ = \{(1, 1), (1, 2), (2, 1), (2, 2)\}$.} \\[0.5em]
+\textcolor{blue}{$R^+$ is not reflexive because $(3, 3) \notin R^+$. Since reflexivity is required for an equivalence relation, $R^+$ is not an equivalence relation.}
+
+\end{document} 

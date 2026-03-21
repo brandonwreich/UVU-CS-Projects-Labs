@@ -1,0 +1,162 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Homework 8}
+\author{Brandon Reich}
+\date{20 March 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{6.1.1}
+Graph $G$ has vertices $\{1,2,3,4,5,6\}$ and edges $\{1,2\},\ \{2,3\},\ \{1,5\},\ \{1,6\},\ \{2,5\},\ \{3,4\},\ \{3,5\},\ \{4,5\},\ \{5,6\}$.
+\begin{itemize}
+    \item a) Total degree of $G$ = sum of all vertex degrees = $3+3+3+2+5+2 = 18$.
+    \item b) Neighbors of vertex 5: $\{1,\ 2,\ 3,\ 4,\ 6\}$.
+    \item c) Degree of vertex 6 = 2.
+    \item d) Vertices adjacent to vertex 3: $\{2,\ 4,\ 5\}$.
+    \item e) $G$ is not regular. The vertices do not all have the same degree (e.g., $\deg(5) = 5$ but $\deg(4) = 2$).
+    \item f) Yes, $K_3$ is a subgraph of $G$. Vertices $\{1,\ 2,\ 5\}$ form a $K_3$ since edges $\{1,2\},\ \{1,5\},\ \{2,5\}$ all exist.
+    \item g) No, $K_4$ is not a subgraph of $G$. $K_4$ requires 4 mutually adjacent vertices. Any such set must include vertex 5 (the only vertex with degree $\ge 4$), so we need 3 of its neighbors that are all pairwise adjacent. Checking all triples of neighbors of 5: none have all three pairwise edges. For example, $\{1,2,3\}$: edge $\{1,3\}$ does not exist.
+\end{itemize}
+
+\subsection*{6.1.4}
+\begin{itemize}
+    \item a) No. A 3-regular graph on 5 vertices would have total degree $3 \times 5 = 15$, which is odd. By the Handshake Theorem, the total degree must equal $2m$ (an even number), so such a graph is impossible.
+    \item b) Yes. A 3-regular graph on 6 vertices would have total degree $3 \times 6 = 18$, giving $m = 9$ edges. Example: $K_{3,3}$ (the complete bipartite graph with parts $\{1,2,3\}$ and $\{4,5,6\}$), where every vertex has degree 3.
+\end{itemize}
+
+\subsection*{6.2.1}
+Draw the graph based on its representation.
+\begin{itemize}
+    \item a) $V = \{a,b,c,d\}$, $E = \{\{a,b\},\ \{a,d\},\ \{b,c\},\ \{b,d\},\ \{c,d\}\}$.\\
+    Degree sequence: $\deg(a)=2,\ \deg(b)=3,\ \deg(c)=2,\ \deg(d)=3$.
+
+    \item b) From the adjacency list:\\
+    $V = \{a,b,c,d,e\}$, $E = \{\{a,b\},\ \{a,d\},\ \{b,c\},\ \{b,e\},\ \{c,d\},\ \{d,e\}\}$.\\
+    Degree sequence: $\deg(a)=2,\ \deg(b)=3,\ \deg(c)=2,\ \deg(d)=3,\ \deg(e)=2$.
+
+    \item c) From the adjacency matrix (rows/columns labeled $1,2,3,4,5$):\\
+    $V = \{1,2,3,4,5\}$, $E = \{\{1,2\},\ \{1,3\},\ \{2,5\},\ \{3,4\},\ \{3,5\},\ \{4,5\}\}$.\\
+    Degree sequence: $\deg(1)=2,\ \deg(2)=2,\ \deg(3)=3,\ \deg(4)=2,\ \deg(5)=3$.
+\end{itemize}
+
+\subsection*{6.3.1}
+\begin{itemize}
+    \item a) Graph $G_1$: $V = \{1,2,3,4,5,6\}$, edges $\{1,2\},\ \{2,3\},\ \{4,5\},\ \{5,6\},\ \{1,5\},\ \{1,6\},\ \{2,5\},\ \{2,6\},\ \{3,4\},\ \{3,5\}$.\\
+    Graph $G_2$: $V = \{a,b,c,d,e,f\}$, edges $\{a,b\},\ \{a,c\},\ \{a,d\},\ \{a,e\},\ \{a,f\},\ \{b,c\},\ \{c,f\},\ \{d,e\},\ \{d,f\},\ \{e,f\}$.\\[4pt]
+    Both graphs have 6 vertices, 10 edges, and degree sequence $[2,3,3,3,4,5]$.\\[4pt]
+    Isomorphism $f\colon V(G_1) \to V(G_2)$:\\
+    $1 \mapsto d,\quad 2 \mapsto f,\quad 3 \mapsto c,\quad 4 \mapsto b,\quad 5 \mapsto a,\quad 6 \mapsto e$.\\[4pt]
+    Verification of every edge:\\
+    $\{1,2\} \to \{d,f\}$ \checkmark\quad
+    $\{2,3\} \to \{f,c\}$ \checkmark\quad
+    $\{4,5\} \to \{b,a\}$ \checkmark\quad
+    $\{5,6\} \to \{a,e\}$ \checkmark\quad
+    $\{1,5\} \to \{d,a\}$ \checkmark\\
+    $\{1,6\} \to \{d,e\}$ \checkmark\quad
+    $\{2,5\} \to \{f,a\}$ \checkmark\quad
+    $\{2,6\} \to \{f,e\}$ \checkmark\quad
+    $\{3,4\} \to \{c,b\}$ \checkmark\quad
+    $\{3,5\} \to \{c,a\}$ \checkmark\\
+    All 10 edges map to edges in $G_2$, so the graphs are isomorphic.
+\end{itemize}
+
+\subsection*{6.4.2}
+Graph with $V = \{A,B,C,D,E,F,G,H,I\}$ and edges $\{A,B\},\ \{A,D\},\ \{A,E\},\ \{B,D\},\ \{B,E\},\ \{B,H\},\ \{D,E\},\ \{D,F\},\ \{E,G\},\ \{E,H\},\ \{E,I\},\ \{F,I\},\ \{G,H\},\ \{I,C\}$.
+\begin{itemize}
+    \item a) The maximum length of a path is 8 (a Hamiltonian path visiting all 9 vertices).\\
+    Example: $\langle C,\ I,\ F,\ D,\ A,\ B,\ H,\ G,\ E \rangle$.\\
+    Edges used: $\{C,I\},\ \{I,F\},\ \{F,D\},\ \{D,A\},\ \{A,B\},\ \{B,H\},\ \{H,G\},\ \{G,E\}$ --- all exist and no vertex is repeated.
+
+    \item b) The maximum length of a cycle is 8. Vertex $C$ has degree 1, so it cannot appear in any cycle. Excluding $C$, a Hamiltonian cycle on the remaining 8 vertices:\\
+    $\langle G,\ E,\ I,\ F,\ D,\ A,\ B,\ H,\ G \rangle$.\\
+    Edges used: $\{G,E\},\ \{E,I\},\ \{I,F\},\ \{F,D\},\ \{D,A\},\ \{A,B\},\ \{B,H\},\ \{H,G\}$ --- all exist, no vertex repeated (except $G$ as start/end).
+\end{itemize}
+
+\subsection*{6.5.2}
+\begin{itemize}
+    \item b) The minimum degree is $\delta(G) = 2$ (vertex 8 connects only to vertices 5 and 7).\\[4pt]
+    \textbf{Edge connectivity} $\lambda(G) = 2$: Removing edges $\{5,8\}$ and $\{7,8\}$ disconnects vertex 8 from the rest of the graph. No single edge removal can disconnect $G$ because every vertex has degree $\ge 2$ and there are no bridges.\\[4pt]
+    \textbf{Vertex connectivity} $\kappa(G) = 2$: Removing vertices 5 and 7 isolates vertex 8. No single vertex removal disconnects $G$ because the remaining graph is always connected.\\[4pt]
+    $\kappa(G) = \lambda(G) = \delta(G) = 2$.
+\end{itemize}
+
+\subsection*{7.1.1}
+Rooted tree with root $p$.\\
+$p \to \{l,k,i\}$,\quad $l \to \{j\}$,\quad $k \to \{h,f\}$,\quad $i \to \{g\}$,\quad $j \to \{m\}$,\quad $f \to \{e,d\}$,\quad $m \to \{o\}$,\quad $e \to \{n\}$,\quad $d \to \{a,b,c\}$,\quad $o \to \{q\}$.
+\begin{itemize}
+    \item a) Ancestors of $n$: the path from $n$ to the root is $n \to e \to f \to k \to p$.\\
+    Ancestors: $\{e,\ f,\ k,\ p\}$.
+
+    \item b) Descendants of $i$: $i \to g$, and $g$ is a leaf.\\
+    Descendants: $\{g\}$.
+
+    \item c) Leaves (vertices with no children): $\{h,\ g,\ q,\ n,\ a,\ b,\ c\}$.
+
+    \item h) Siblings of $i$: the parent of $i$ is $p$, whose children are $\{l,k,i\}$.\\
+    Siblings: $\{l,\ k\}$.
+\end{itemize}
+
+\subsection*{7.2.1}
+\begin{itemize}
+    \item a) Board state: O,O,$\_$ / $\_$,$\_$,X / X,O,X. It is O's turn. Three empty cells give three children:\\[4pt]
+    \textbf{Child 1} --- O plays top-right:\\
+    O,O,O / $\_$,$\_$,X / X,O,X.\\
+    \textbf{Leaf --- O wins} (top row).\\[4pt]
+    \textbf{Child 2} --- O plays middle-left:\\
+    O,O,$\_$ / O,$\_$,X / X,O,X.\\
+    No winner yet. Not a leaf (X plays next).\\[4pt]
+    \textbf{Child 3} --- O plays center:\\
+    O,O,$\_$ / $\_$,O,X / X,O,X.\\
+    \textbf{Leaf --- O wins} (middle column: O,O,O).
+\end{itemize}
+
+\subsection*{7.2.2}
+Prefix code tree: $a = 0$, $e = 10$, $c = 1100$, $n = 1101$, $d = 1110$, $y = 1111$.
+\begin{itemize}
+    \item c) Decode ``1110101101'':\\
+    $1110 \to d$,\quad $10 \to e$,\quad $1101 \to n$.\\
+    Result: ``den''.
+\end{itemize}
+
+\subsection*{7.3.2}
+\begin{itemize}
+    \item b) A tree with 8 vertices that has the most leaves possible is the star graph $K_{1,7}$: one central vertex connected to all 7 other vertices. Each of the 7 outer vertices is a leaf, giving 7 leaves total. This is the maximum because every tree with $n \ge 3$ must have at least one non-leaf (internal) vertex, so the most leaves possible is $n - 1 = 7$.
+\end{itemize}
+
+\subsection*{7.4.1}
+Rooted tree: $d \to \{f,b,a\}$, $b \to \{i,h,e\}$, $a \to \{c\}$, $c \to \{g\}$. Leaves: $f,i,h,e,g$.
+\begin{itemize}
+    \item a) \textbf{Post-order} (visit all children left-to-right, then the parent):\\
+    $f,\ i,\ h,\ e,\ b,\ g,\ c,\ a,\ d$.
+
+    \item b) \textbf{Pre-order} (visit the parent, then all children left-to-right):\\
+    $d,\ f,\ b,\ i,\ h,\ e,\ a,\ c,\ g$.
+\end{itemize}
+
+\subsection*{7.5.1}
+Graph $G$: $V = \{a,b,c,d,e,f,g\}$, edges $\{a,c\},\ \{a,d\},\ \{a,f\},\ \{b,c\},\ \{b,e\},\ \{b,f\},\ \{c,e\},\ \{c,f\},\ \{d,f\},\ \{d,g\},\ \{f,g\}$.\\
+Start at vertex $a$; neighbors considered in alphabetical order.
+\begin{itemize}
+    \item a) \textbf{BFS tree from $a$}:\\
+    Visit $a$ --- enqueue neighbors $c,d,f$.\\
+    Visit $c$ --- enqueue new neighbors $b,e$.\\
+    Visit $d$ --- enqueue new neighbor $g$.\\
+    Visit $f$ --- no new neighbors.\\
+    Visit $b$ --- no new neighbors.\\
+    Visit $e$ --- no new neighbors.\\
+    Visit $g$ --- no new neighbors.\\[4pt]
+    BFS tree edges: $\{a,c\},\ \{a,d\},\ \{a,f\},\ \{c,b\},\ \{c,e\},\ \{d,g\}$.\\
+    $a \to \{c,d,f\}$, $c \to \{b,e\}$, $d \to \{g\}$.
+
+    \item[]\textbf{DFS tree from $a$}:\\
+    $a \to c$ (first neighbor of $a$),\quad $c \to b$ (first unvisited neighbor of $c$),\quad $b \to e$ (first unvisited of $b$),\\
+    $e \to f$ (first unvisited of $e$),\quad $f \to d$ (first unvisited of $f$),\quad $d \to g$ (first unvisited of $d$).\\[4pt]
+    DFS tree edges: $\{a,c\},\ \{c,b\},\ \{b,e\},\ \{e,f\},\ \{f,d\},\ \{d,g\}$.\\
+    Path: $a \to c \to b \to e \to f \to d \to g$.
+\end{itemize}
+
+\end{document}

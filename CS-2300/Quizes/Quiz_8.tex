@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{Quiz 8}
+\author{Brandon Reich}
+\date{20 March 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+Prove that for any $k$, the property of having $C_k$ as a subgraph is preserved under isomorphism. \\[1em]
+\textcolor{blue}{Proof:} \\[0.5em]
+\textcolor{blue}{Let $G$ and $G'$ be graphs with $f$ being an isomorphism from $G$ to $G'$. Assume $G$ contains $C_k$ as a subgraph, meaning $G$ has vertices $v_1, \ldots, v_k$ where $\{v_i, v_{i+1}\}$ is an edge in $G$ for each $i = 1, \ldots, k - 1$, and $\{v_1, v_k\}$ is an edge in $G$ as well. Since $f$ is an isomorphism, it preserves adjacency, so $\{f(v_i), f(v_{i+1})\}$ is an edge in $G'$ for each $i = 1, \ldots, k - 1$, and $\{f(v_1), f(v_k)\}$ is an edge in $G'$. Hence $C_k$ is a subgraph of $G'$.} $\blacksquare$
+
+\subsection*{2.}
+If a graph is a tree with $n$ vertices and $m$ edges, then $m = n - 1$. Is the converse true? That is, if a graph has $n$ vertices and $n - 1$ edges, can one conclude that it is a tree? Justify the answer. \\[1em]
+\textcolor{blue}{No. Consider a cycle on $n - 1$ vertices along with a single isolated vertex. This gives a graph with $n$ vertices and $n - 1$ edges, yet it is not a tree since it contains a cycle and is not connected. The question does not require the graph to be connected, so having $n$ vertices and $n - 1$ edges alone is not enough to guarantee a tree.}
+
+\end{document}

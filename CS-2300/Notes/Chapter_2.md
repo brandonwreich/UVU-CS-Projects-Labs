@@ -428,7 +428,7 @@ Proof: (Indicate the proof is starting)
 Indicate when the proof starts and ends. | In this material, every proof begins with the word **Proof** and ends with the symbol $\blacksquare$. |
 | Write proofs in complete sentences | A proof should read like English text. In mathematical proofs, English sentences often contain mathematical expressions but those should read naturally as part of the sentence. For example: "If $x$ is an integer that is greater than 0, then $x \ge 1$. |
 | Give the reader a roadmap of what has been shown, what is assumed, and where the proof is going. | The beginning of a proof should always state what facts are assumed and ideally inform the reader what will be proven in the proof. If a proof is long, it is helpful to indicate at one or more points in the middle what has been proven and what has yet to be proven. For example: "We have shown that $n$ is a postivie integer. Now we must estable that $n$ is composite." |
-| Introduce each variable when the variable is used for the first time. | |
+| Introduce each variable when the variable is used for the first time. | "Let x be positive", "Since we know that $m$ divids $n$, there is an integer $k$ such that $n=km$", and "Let $s$ be the average of $x$ and $y$ : $s = \frac{x+y}{2}$" are all examples. |
 | A block of equations should be introduced with English text and each step that does not follow from algebra should be justified. | |
 
 ### Existential instantiation
