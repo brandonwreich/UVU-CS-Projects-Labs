@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Homework 9}
+\author{Brandon Reich}
+\date{31 March 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{8.1.1}
+Give the first ten terms of the following sequences. Assume that the sequences start with an index of 1. Logs are to base 2. Indicate whether the sequence is increasing, decreasing, nonincreasing, or nondecreasing. The sequence may have more than one of those properties.
+\begin{itemize}
+    \item b) The first two terms in the sequence are 1. The rest of the terms are the sum of the two preceding terms. \\
+    \textcolor{blue}{Nondecreasing.}
+    \item e) The $n^{th}$ term is 3. \\
+    \textcolor{blue}{Nonincreasing, nondecreasing.}
+\end{itemize}
+
+\subsection*{8.1.2}
+For each of the sequences described below, indicate which of the following properties describes the sequence, keeping in mind that the sequence may have more than one of the properties, or none of the properties: Increasing, Decreasing, Nonincreasing, Nondecreasing
+\begin{itemize}
+    \item a) $a_n = n^2 - 2n$ for $n \ge 1$ \\
+    \textcolor{blue}{Increasing, nondecreasing.}
+    \item b) $a_n = n^2 -3n$ for $n \ge 1$ \\
+    \textcolor{blue}{Nondecreasing.}
+\end{itemize}
+
+\subsection*{8.2.1}
+Give the first six terms of the following sequences.
+\begin{itemize}
+    \item a) The first term is 1, and the second term is 2. The rest of the terms are the product of the two preceding terms. \\
+    \textcolor{blue}{1, 2, 2, 4, 8, 32}
+\end{itemize}
+
+\subsection*{8.3.1}
+Evaluate the following summations.
+\begin{itemize}
+    \item a) $\displaystyle\sum_{k=-1}^{4} k^2$ \\
+    \textcolor{blue}{$(-1)^2 + 0^2 + 1^2 + 2^2 + 3^2 + 4^2 = 1 + 0 + 1 + 4 + 9 + 16 = 31$.}
+    \item e) $\displaystyle\sum_{k=0}^{200} (2 + 3k)$ \\
+    \textcolor{blue}{$\displaystyle\sum_{k=0}^{200} 2\ +\ 3\sum_{k=0}^{200} k = 2(201) + 3\cdot\frac{200\cdot 201}{2} = 402 + 60300 = 60702$.}
+\end{itemize}
+
+\subsection*{8.3.2}
+Express the following sums using summation notation.
+\begin{itemize}
+    \item a) $(-2)^5 + (-1)^5 + \cdots + 7^5$ \\
+    \textcolor{blue}{$\displaystyle\sum_{k=-2}^{7} k^5$.}
+\end{itemize}
+
+\subsection*{8.5.1}
+Prove each of the following statements using mathematical induction.
+\begin{itemize}
+    \item b) Prove that for any positive integer $n$, 6 evenly divides $7^n - 1$. \\
+    \textcolor{blue}{
+    \textbf{Base case} ($n = 1$): $7^1 - 1 = 6 = 6 \cdot 1$, so 6 evenly divides $7^1 - 1$. \\[4pt]
+    \textbf{Inductive step}: Assume $6 \mid 7^k - 1$ for some positive integer $k$, i.e.\ $7^k - 1 = 6m$ for some integer $m$, so $7^k = 6m + 1$. We want to show $6 \mid 7^{k+1} - 1$:
+    \[
+        7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 7 - 1 = 42m + 6 = 6(7m + 1).
+    \]
+    Since $7m + 1$ is an integer, $6 \mid 7^{k+1} - 1$. \\[4pt]
+    By induction, 6 evenly divides $7^n - 1$ for all positive integers $n$.
+    }
+\end{itemize}
+
+\subsection*{8.5.3}
+Prove each of the following statements using mathematical induction.
+\begin{itemize}
+    \item b) Define the sequence $\{b_n\}$: $b_0 = 1$,\ $b_n = 2b_{n-1} + 1$ for $n \ge 1$. Prove that for $n \ge 0$,\ $b_n = 2^{n+1} - 1$. \\
+    \textcolor{blue}{
+    \textbf{Base case} ($n = 0$): $b_0 = 1$ and $2^{0+1} - 1 = 2 - 1 = 1$. \\[4pt]
+    \textbf{Inductive step}: Assume $b_k = 2^{k+1} - 1$ for some $k \ge 0$. Then:
+    \[
+        b_{k+1} = 2b_k + 1 = 2(2^{k+1} - 1) + 1 = 2^{k+2} - 2 + 1 = 2^{k+2} - 1 = 2^{(k+1)+1} - 1.
+    \]
+    By induction, $b_n = 2^{n+1} - 1$ for all $n \ge 0$.
+    }
+\end{itemize}
+
+\subsection*{8.6.1}
+Prove each of the following statements using strong induction.
+\begin{itemize}
+    \item a) Prove that any amount of postage worth 8 cents or more can be made from 3-cent or 5-cent stamps. \\
+    \textcolor{blue}{
+    \textbf{Base cases}:\\
+    $n = 8$: $3 + 5 = 8$. \\
+    $n = 9$: $3 + 3 + 3 = 9$. \\
+    $n = 10$: $5 + 5 = 10$. \\[4pt]
+    \textbf{Inductive step}: Let $k \ge 10$ and assume that every postage amount $j$ with $8 \le j \le k$ can be formed from 3-cent and 5-cent stamps. We show $k + 1$ cents can be formed.\\[4pt]
+    Since $k \ge 10$, we have $k - 2 \ge 8$, so by the inductive hypothesis $k - 2$ cents can be made from 3-cent and 5-cent stamps. Adding one 3-cent stamp gives $(k-2) + 3 = k + 1$ cents. \\[4pt]
+    By strong induction, any postage amount of 8 cents or more can be made from 3-cent and 5-cent stamps.
+    }
+\end{itemize}
+
+\end{document}

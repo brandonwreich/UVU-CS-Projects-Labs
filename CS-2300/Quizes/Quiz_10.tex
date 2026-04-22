@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{Quiz 10}
+\author{Brandon Reich}
+\date{7 April 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{Problem 1.}
+In logic, we can define a well-formed formula (WFF) as follows:
+\begin{enumerate}
+    \item A propositional variable is a WFF.
+    \item If $P$ and $Q$ are WFFs, then $(P)$, $\neg P$, $(P \land Q)$, $(P \lor Q)$, $(P \to Q)$, and $(P \leftrightarrow Q)$ are also WFFs.
+\end{enumerate}
+An AI-generated proof claims to show that every WFF has an equal number of left and right parentheses. Is the proof correct? \\[0.5em]
+
+\textcolor{blue}{
+The proof is not corect. Most of it is fine, but the $\neg P$ case has a mistake. The proof says $\neg P$ adds one left and one right parenthesis to $P$. That's wrong. Looking at the WFF definition, $\neg P$ just puts a $\neg$ in front of $P$ -- no paretheses are added at all. So $\neg P$ has the exact same number of left and right parentheses as $P$. The $\neg P$ case should say: since no parentheses are added, if $P$ already has equal left and right paretheses, then $\neg P$ does too. The conclusion still holds, just the reasoning was wrong. Every thing else in the proof looks good.
+} \\[0.5em]
+
+\subsection*{Question 2.}
+Use induction to prove that the following algorthm computes the product of all primes in the range $2$ through $n$ for every integer $n > 1$. Assume that $\text{IsPrime}(n)$ correctly returns True if $n$ is prime and False otherwise. \\[0.5em]
+
+\textcolor{blue}{\textbf{Proof:}} \\[0.5em]
+
+\textcolor{blue}{\textbf{Base Case} ($n = 2$):} \\[0.3em]
+\textcolor{blue}{
+When $n = 2$, the algorthm hits the base case and returns $2$. The only prime between $2$ and $2$ is $2$, so the product should be $2$. That matches, so the base case works.
+} \\[0.5em]
+
+\textcolor{blue}{\textbf{Inductive Hypothesis:}} \\[0.3em]
+\textcolor{blue}{
+Assume that for all integers $k$ where $2 \leq k < n$, $\text{ProductOfPrimes}(k)$ correctly returns the product of all primes from $2$ through $k$.
+} \\[0.5em]
+
+\textcolor{blue}{\textbf{Inductive Step:}} \\[0.3em]
+\textcolor{blue}{
+Let $n > 2$. Since we arere past the base case, the algorithm calls
+\[
+p := \text{ProductOfPrimes}(n - 1).
+\]
+Since $2 \leq n-1 < n$, the inductive hypothesis tells us $p$ is already the correct product of all primes from $2$ through $n-1$. From there the algorithm splits into two cases:
+} \\[0.3em]
+
+\textcolor{blue}{
+\textbf{Case 1: $n$ is prime.} The algorthm returns $p \cdot n$. Since $p$ has all the primes up to $n-1$ and $n$ is prime, multiplying them together gives the product of all primes from $2$ through $n$. This case is correct.
+} \\[0.3em]
+
+\textcolor{blue}{
+\textbf{Case 2: $n$ is not prime.} The algorthm just returns $p$. Since $n$ isn't prime, the primes from $2$ through $n$ are the same as the primes from $2$ through $n-1$, so $p$ is already the right answer. This case is correct.
+} \\[0.5em]
+
+\textcolor{blue}{
+Both cases work out, so by strong induction $\text{ProductOfPrimes}(n)$ is correct for all integers $n > 1$. $\blacksquare$
+}
+
+\end{document}

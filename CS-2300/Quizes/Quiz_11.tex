@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{Quiz 11}
+\author{Brandon Reich}
+\date{7 April 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{Question 1}
+Suppose a network has 40 computers, of which five will fail. 
+
+\begin{itemize}
+    \item a) How many possibilities are there for the five that fail?
+    \textcolor{blue}{$\binom{40}{5}$}
+    \item b) Suppose that three of the computers in the network have a copy of a particular file. How many sets of failures wipe out all the copies of the file? That is, how many 5-subsets contain the three computers that have the file?
+    \textcolor{blue}{$\binom{37}{2}$}
+\end{itemize}
+
+\subsection*{Question 2}
+A search committee is formed to find a new software engineer.
+
+\begin{itemize}
+    \item a) If 100 applicants apply for the job, how many ways are there to select a subset of 9 applicants for a short list?
+    \textcolor{blue}{$\binom{100}{9}$}
+    \item b) If 6 of the 9 are selected for an interview, how many ways are there to pick the set of applicants who are interviewed? (Assume that the short list is already decided).
+    \textcolor{blue}{$\binom{9}{6}$}
+    \item c) Based on the interview, the committee will rank the top 3 applicants and submit the list to the boss who will make the final decision. (Assume that the interviewees are already decided.) How many ways are there to select the list from the 6 applicants?
+    \textcolor{blue}{$P(6,3)$}
+\end{itemize}
+
+\end{document}

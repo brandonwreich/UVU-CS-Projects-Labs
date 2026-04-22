@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{Quiz 9}
+\author{Brandon Reich}
+\date{31 March 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{1.}
+Use mathematical induction to prove that for any positive integer $n$,
+\[
+\sum_{j=1}^{n} j \cdot 2^j = (n-1)2^{n+1} + 2.
+\] \\[0.5em]
+\textcolor{blue}{\textbf{Proof by Mathematical Induction:}} \\[0.5em]
+\textcolor{blue}{\textbf{Base Case} ($n = 1$):} \\[0.3em]
+\textcolor{blue}{
+The left-hand side is $\displaystyle\sum_{j=1}^{1} j \cdot 2^j = 1 \cdot 2^1 = 2$.
+The right-hand side is $(1-1)2^{2} + 2 = 0 + 2 = 2$.
+Since both sides equal 2, the base case holds.
+} \\[0.5em]
+\textcolor{blue}{\textbf{Inductive Hypothesis:}} \\[0.3em]
+\textcolor{blue}{
+Assume that for some integer $k \geq 1$,
+\[
+\sum_{j=1}^{k} j \cdot 2^j = (k-1)2^{k+1} + 2.
+\]
+} \\[0.3em]
+\textcolor{blue}{\textbf{Inductive Step:}} \\[0.3em]
+\textcolor{blue}{
+We must show that $\displaystyle\sum_{j=1}^{k+1} j \cdot 2^j = k \cdot 2^{k+2} + 2$.
+\begin{align*}
+\sum_{j=1}^{k+1} j \cdot 2^j
+&= \sum_{j=1}^{k} j \cdot 2^j + (k+1) \cdot 2^{k+1} \\
+&= \bigl[(k-1)2^{k+1} + 2\bigr] + (k+1) \cdot 2^{k+1} \quad \text{(by the inductive hypothesis)} \\
+&= \bigl[(k-1) + (k+1)\bigr] \cdot 2^{k+1} + 2 \\
+&= 2k \cdot 2^{k+1} + 2 \\
+&= k \cdot 2^{k+2} + 2.
+\end{align*}
+This is exactly $((k+1)-1)2^{(k+1)+1} + 2$, which is what we needed to show.
+} \\[0.3em]
+\textcolor{blue}{
+By the principle of mathematical induction, the statement holds for all positive integers $n$. $\blacksquare$
+}
+
+\subsection*{2.}
+Consider the following inductive proof that all discrete math students in a class receive the same grade. Is this proof valid? If yes, explain why. If no, point out all places where the proof is incorrect. \\[1em]
+\textcolor{blue}{
+The proof is \textbf{not valid}. The inductive step breaks down at $k = 1$. When the class has 2 students $\{A, B\}$, removing $A$ leaves $\{B\}$ and removing $B$ leaves $\{A\}$, these two groups share no students in common. So the step from $n = 1$ to $n = 2$ is never actually proven, and the conclusion fails.
+} \\[0.3em]
+
+\end{document}

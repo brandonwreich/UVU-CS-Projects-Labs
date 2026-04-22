@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Homework 12}
+\author{Brandon Reich}
+\date{21 April 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{9.9.2} A cookie store sells six varieties of cookies. The store has a large supply of each kind.
+\begin{itemize}
+    \item a) How many ways are there to select 15 cookies? 
+    \textcolor{blue}{$\binom{20}{5}$}
+    \item b) How many ways are there to select 15 cookies if at least three must be chocolate chip? 
+    \textcolor{blue}{$\binom{17}{5}$}
+    \item c) How many ways are there to select 15 cookies if at most two can be sugar cookies? 
+    \textcolor{blue}{$\binom{19}{4} + \binom{18}{4} + \binom{17}{4}$}
+    \item d) How many ways are there to select 15 cookies if at most two can be sugar cookies and at least three must be chocolate chip? 
+    \textcolor{blue}{$\binom{16}{4} + \binom{15}{4} + \binom{14}{4}$}
+\end{itemize}
+
+\subsection*{9.10.2} A man is distributing his coin collection with 35 coins to his five grandchildren. How many ways are there to distribute the coins if:
+\begin{itemize}
+    \item a) The coins are all the same.
+    \textcolor{blue}{$\binom{39}{4}$}
+    \item b) The coins are all distinct.
+    \textcolor{blue}{$5^{35}$}
+    \item c) The coins are the same, and each grandchild gets the same number of coins.
+    \textcolor{blue}{$1$}
+    \item d) The coins are all distinct, and each grandchild gets the same number of coins
+    \textcolor{blue}{$\frac{35!}{(7!)^5}$}
+\end{itemize}
+
+\subsection*{9.11.2} Count the number of binary strings of length 10 subject to each of the following restrictions.
+\begin{itemize}
+    \item a) The string has at least one 1.
+    \textcolor{blue}{$2^{10} - 1$}
+    \item b) The string has at least one 1 and at least one 0.
+    \textcolor{blue}{$2^{10} - 2$}
+    \item c) The string contains exactly five 1s or begins with a 0.
+    \textcolor{blue}{$\binom{10}{5} + 2^9 - \binom{9}{5}$}
+\end{itemize}
+
+\subsection*{9.12.20} Counting binary strings, cont.
+\begin{itemize}
+    \item c) How many binary strings of length 12 start with 101 or 1110 and have exactly four 1s?
+    \textcolor{blue}{$\binom{9}{2} + \binom{8}{1}$}
+    \item d) How many binary strings of length 12 start with 101 or 1110 and do not have exactly four 1s?
+    \textcolor{blue}{$2^9 + 2^8 - \binom{9}{2} - \binom{8}{1}$}
+\end{itemize}
+
+\subsection*{9.12.24} Solutions to equations involving a sum of integer valued variables.
+\begin{itemize}
+    \item a) How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = 37$ where each $x_i$ is a nonnegative integer?
+    \textcolor{blue}{$\binom{42}{5}$}
+    \item b) How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = 37$ where each $x_i$ is an integer that satisfies $x_i \ge 2$
+    \textcolor{blue}{$\binom{30}{5}$}
+\end{itemize}
+
+\subsection*{9.13.3} For each 7-subset of {1,2,3,4,5,6,7,8,9,10,11,12,13,14} give the next largest 7-subset or indicate that the 7-subset is the last one in lexicographic order.
+\begin{itemize}
+    \item d) {2,4,5,6,11,12,14} $\rightarrow$
+    \textcolor{blue}{$\{2,4,5,6,11,13,14\}$}
+    \item e) {7,8,10,11,12,13,14} $\rightarrow$
+    \textcolor{blue}{$\{7,w9,10,11,12,13,14\}$}
+\end{itemize}
+
+\subsection*{9.14.1} Using the binomial theorem to find coefficients in binomials.
+\begin{itemize}
+    \item c) What is the coefficient of $x^5y^3$ in $(3x - 4y)^8$?
+    \textcolor{blue}{-870,912}
+\end{itemize}
+
+\subsection*{9.14.2} Use the binomial theorem to find a closed form expression equivalent to the following sums:
+\begin{itemize}
+    \item a) \[\sum_{k=0}^{n} \binom{n}{k} 3^k(-1)^{n-k}\]
+    \textcolor{blue}{$2^n$}
+\end{itemize}
+
+\subsection*{9.15.3} Pigeonhole principle converse.
+\begin{itemize}
+    \item a) A team wishes to purchase 10 shirts of the same color. A store sells shirts in 3 different colors. What must the inventory of the store be in order to conclude that there are at least 10 shirts in one of the three colors?
+    \textcolor{blue}{At least $3 \cdot 9 + 1 = 28$ shirts. In the worst case the store has 9 of each of the 3 colors (27 total) without any color reaching 10, so one more shirt is needed to force 10 of some color.}
+\end{itemize}
+
+\subsection*{9.15.4} Applying the pigeonhole principle to sums of integers.
+\begin{itemize}
+    \item a) Suppose a set of eight numbers is selected from the set $\{1,2,\ldots,13,14\}$. Show that two of the selected numbers must sum to 15. \\
+    \textcolor{blue}{Pair the elements of $\{1, 2, \ldots, 14\}$ by the relation $a + b = 15$:
+    \[ \{1,14\},\ \{2,13\},\ \{3,12\},\ \{4,11\},\ \{5,10\},\ \{6,9\},\ \{7,8\}. \]
+    This partitions the 14 numbers into 7 pairs (pigeonholes). Selecting 8 numbers (pigeons), by the pigeonhole principle at least two selected numbers must come from the same pair, and those two sum to 15.}
+\end{itemize}
+
+\end{document}

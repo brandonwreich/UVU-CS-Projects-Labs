@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Homework 11}
+\author{Brandon Reich}
+\date{14 April 2026}
+
+\begin{document}
+\maketitle
+
+\subsection*{9.1.1} In a particular state, the license plates have 7 characters. Each character can be a capital letter or a digit except for 0. (The set of possible digits is $\{1,2,3,4,5,6,7,8,9\}$.) A person witnesses a crime and remembers some information about the license plate of the getaway car. The authorities need to figure out how many license plates need to be checked in each case. For each constraint given below, indicate the number of license plates that satisfy that constraint.
+\begin{itemize}
+    \item a) No constraints - 
+    \textcolor{blue}{$35^7$}
+    \item c) The first three characters are letters - 
+    \textcolor{blue}{$26^3 \cdot 35^4$}
+\end{itemize}
+
+\subsection*{9.1.2} Compute the number of passwords that satisfy the given constraints.
+\begin{itemize}
+    \item b) Strings of length 7, 8, or 9. Characters can be special characters, digits, or letters. \\
+    \textcolor{blue}{$40^7 + 40^8 + 40^9$}
+\end{itemize}
+
+\subsection*{9.2.3}
+\begin{itemize}
+    \item a) \\
+
+    \item b) \\
+    \textcolor{blue}{}
+\end{itemize}
+
+\subsection*{9.2.5}
+\begin{itemize}
+    \item c) Is the function $f$ a $k$-to-$1$ correspondence for some positive integer $k$? If so, for what value of $k$. Justify your answer.\\
+    \textcolor{blue}{Yes, $k = 2$. Each element in $T$ has exactly two pre-images in $S$: itself, and the same ordering with Gene and Don swapped.}
+    \item d) There are 3,628,800 ways to line up the 10 kids with no restrictions on who comes before whom. That is, $|S| = 3,628,800$. Use this fact and the answer to the previous question to determine $|T|$.\\
+    \textcolor{blue}{\[ |T| = \frac{3,628,800}{2} = 1,814,400 \]}
+\end{itemize}
+
+\subsection*{9.3.3} License plate numbers in a certain state consist of seven characters. The first character is a digit (0 through 9). The next four characters are capital letters (A through Z), and the last two characters are digits. Therefore, a license plate number in this state can be any string of the form:
+
+Digit-Letter-Letter-Letter-Letter-Digit-Digit
+\begin{itemize}
+    \item a) How many different license plate numbers are possible? - 
+    \textcolor{blue}{$10^3 \cdot 26^4$}
+    \item b) How many license plate numbers are possible if no digit appears more than once? - 
+    \textcolor{blue}{$P(10,3) \cdot 26^4$}
+\end{itemize}
+
+\subsection*{9.4.1}
+Count the number of different functions with the given domain, target, and additional properties.
+\begin{itemize}
+    \item c) $f : \{0, 1\}^5 \rightarrow \{0, 1\}^7$ \\
+    \textcolor{blue}{$128^{32}$}
+    \item d) $f : \{0, 1\}^5 \rightarrow \{0, 1\}^7$. The function $f$ is one-to-one.\\
+    \textcolor{blue}{$P(128, 32)$}
+\end{itemize}
+
+\subsection*{9.4.3} Ten members of a club are lining up in a row for a photograph. The club has one president, one vice-president, one secretary, and one treasurer.
+\begin{itemize}
+    \item a) How many ways are there to line up the ten people? - 
+    \textcolor{blue}{$P(10,10)$}
+    \item b) How many ways are there to line up the ten people if the vice-president must be beside the president in the photo? -
+    \textcolor{blue}{$2 \cdot P(9,9)$}
+    \item c) How many ways are there to line up the ten people if the president must be next to the secretary and the vice-president must be next to the treasurer? -
+    \textcolor{blue}{$4 \cdot P(8,8)$}
+\end{itemize}
+
+\subsection*{9.5.2} Define the set $S = \{a, b, c, d, e, f, g\}$.
+\begin{itemize}
+    \item c) How many subsets of $S$ have exactly four elements? \\
+    \textcolor{blue}{$\binom{7}{4}$}
+    \item d) How many subsets of $S$ have either three or four elements? \\
+    \textcolor{blue}{$\binom{7}{3} + \binom{7}{4}$}
+\end{itemize}
+
+\subsection*{9.5.4} How many different strings of length 12 containing exactly five $a$s can be chosen over the following alphabets?
+\begin{itemize}
+    \item a) The alphabet $\{a, b\}$ \\
+    \textcolor{blue}{$\binom{12}{5}$}
+    \item b) The alphabet $\{a, b, c\}$ \\
+    \textcolor{blue}{$\binom{12}{5} \cdot 2^7$}
+\end{itemize}
+
+\subsection*{9.5.7} Fourteen students have volunteered for a committee. Eight of the students are seniors, and six are juniors.
+\begin{itemize}
+    \item a) How many ways are there to select a committee of five students? \\
+    \textcolor{blue}{$\binom{14}{5}$}
+    \item b) How many ways are there to select a committee with three seniors and two juniors? \\
+    \textcolor{blue}{$\binom{8}{3} \cdot \binom {6}{2}$}
+    \item c) Suppose the committee must have five students (either juniors or seniors) and that one of the five must be selected as chair. How many ways are there to make the selection? \\
+    \textcolor{blue}{$\binom{14}{5} \cdot 5$}
+\end{itemize}
+
+\subsection*{9.7.3} Counting bit strings.
+\begin{itemize}
+    \item a) How many 8-bit strings have at least two consecutive 0s or two consecutive 1s?\\
+    \textcolor{blue}{$2^8 - 2$.}
+    \item b) How many 8-bit strings do not begin with 000? \\
+    \textcolor{blue}{$2^8 - 2^5$}
+\end{itemize}
+
+\subsection*{9.7.4} Ten members of a club are lining up in a row for a photograph. The club has one president and one vice-president.
+\begin{itemize}
+    \item a) How many ways are there for the club members to line up in which the president is not next to the vice-president? \\
+    \textcolor{blue}{$10! - 2 \cdot 9!$}
+    \item b) How many ways are there for the club members to line up if the vice-president is not in the leftmost position? \\
+    \textcolor{blue}{$10! - 9!$}
+    \item c) How many ways are there for the club members to line up if the vice-president is not at one end (that is, in the leftmost or rightmost positions)? \\
+    \textcolor{blue}{$10! - 2 \cdot 9!$}
+\end{itemize}
+
+\subsection*{9.8.4} Twenty different comic books are distributed to five kids.
+\begin{itemize}
+    \item a) How many ways are there to distribute the comic books if there are no restrictions on how many go to each kid (other than the fact that all twenty are given out)? \\
+    \textcolor{blue}{$5^{20}$}
+    \item b) How many ways are there to distribute the comic books if they are divided evenly so that four go to each kid? \\
+    \textcolor{blue}{$\dfrac{20!}{(4!)^5}$}
+\end{itemize}
+
+\subsection*{9.8.6} Assigning summer camp activities.
+\begin{itemize}
+    \item a) A camp offers 4 different activities for an elective: archery, hiking, crafts, and swimming. The capacity in each activity is limited so that at most 35 kids can do archery, 20 can do hiking, 25 can do crafts and 20 can do swimming. The camp has 100 kids. How many ways are there to assign the kids to the activities?\\
+    \textcolor{blue}{$\dfrac{100!}{35! \cdot 20! \cdot 25! \cdot 20!}$}
+\end{itemize}
+
+\end{document}
