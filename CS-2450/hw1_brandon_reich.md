@@ -37,9 +37,10 @@ C#, C++, Java, JavaScript, TypeScript, React, Angular, Python, Ruby, Swift, Terr
   - Couchbase
   - AWS (DynamoDB, DocumentDB, SQS, S3)
   - StrongDM
+  - Port
   - Splunk
   - Azure DevOps (Service Bus, Kubernetes)
-  - Modern AI platforms (Anthropic, OpenAI, AzureOpenAI, Amazon)
+  - Modern AI platforms (Anthropic, OpenAI, AzureOpenAI, Amazon, PortAI)
 
 ## Availability
 
