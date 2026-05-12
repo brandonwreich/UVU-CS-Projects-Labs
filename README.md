@@ -1,6 +1,7 @@
 # UVU-CS-Projects-Labs
 
 This repository is a collection of all the projects and labs I've worked on throughout my Computer Science degree at Utah Valley University (UVU). It serves as a portfolio of my development and learning across multiple CS courses.
+
 ## Contents
 
 - Course projects
@@ -11,7 +12,7 @@ This repository is a collection of all the projects and labs I've worked on thro
 ## Technologies
 
 - **Languages:** C++, HTML, CSS, LaTeX, Markdown
-- **Concepts:** Object-Oriented Programming, Data Structures, Algorithms, Discrete Mathematics, Web Development
+- **Concepts:** Object-Oriented Programming, Data Structures, Algorithms, Discrete Mathematics, Web Development, Software Engineering
 
 ## Repository Structure
 
@@ -24,6 +25,8 @@ UVU-CS-Projects-Labs/
 ├── CS-2370/           # Advanced Programming (C++)
 │   ├── Labs/
 │   └── Projects/
+├── CS-2450/           # Software Engineering
+│   └── hw1_brandon_reich.md
 └── CS-2550/           # Web Development
     ├── index.html
     ├── main.css
@@ -36,7 +39,7 @@ This repository is intended to:
 - Track and organize my academic programming work
 - Showcase my progress and skills acquired during my degree
 - Serve as a reference for future learning and projects
-- Demonstrate proficiency in C++, discrete mathematics, and web development
+- Demonstrate proficiency in C++, discrete mathematics, web development, and software engineering practices
 
 ---
 
